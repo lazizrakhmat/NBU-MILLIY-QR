@@ -1,0 +1,3347 @@
+{
+  "meta": {
+    "latest_date": "01.07.2026",
+    "generated_at": "01.07.2026 09:19",
+    "days_tracked": 1
+  },
+  "kpi": {
+    "baseline": 4402,
+    "registered": 4171,
+    "pending": 231,
+    "pct": 94.8,
+    "total_companies": 11054,
+    "velocity": "~166 ta/kun (o'rt.)",
+    "eta": "~1 kun",
+    "status_label": "Maqomidan oldinda",
+    "status_kind": "good"
+  },
+  "trend": [
+    {
+      "date": "01.07",
+      "registered": 4171,
+      "pending": 231
+    }
+  ],
+  "viloyat": [
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Baseline": 124,
+      "Qilgan": 122,
+      "Qoldiq": 2,
+      "Pct": 98.4
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Baseline": 1051,
+      "Qilgan": 1031,
+      "Qoldiq": 20,
+      "Pct": 98.1
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Baseline": 333,
+      "Qilgan": 324,
+      "Qoldiq": 9,
+      "Pct": 97.3
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Baseline": 394,
+      "Qilgan": 380,
+      "Qoldiq": 14,
+      "Pct": 96.4
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Baseline": 252,
+      "Qilgan": 242,
+      "Qoldiq": 10,
+      "Pct": 96.0
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Baseline": 353,
+      "Qilgan": 337,
+      "Qoldiq": 16,
+      "Pct": 95.5
+    },
+    {
+      "Viloyat": "Бухоро вилояти",
+      "Baseline": 237,
+      "Qilgan": 226,
+      "Qoldiq": 11,
+      "Pct": 95.4
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Baseline": 451,
+      "Qilgan": 425,
+      "Qoldiq": 26,
+      "Pct": 94.2
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Baseline": 177,
+      "Qilgan": 166,
+      "Qoldiq": 11,
+      "Pct": 93.8
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Baseline": 450,
+      "Qilgan": 421,
+      "Qoldiq": 29,
+      "Pct": 93.6
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Baseline": 253,
+      "Qilgan": 230,
+      "Qoldiq": 23,
+      "Pct": 90.9
+    },
+    {
+      "Viloyat": "Сирдарё вилояти",
+      "Baseline": 61,
+      "Qilgan": 52,
+      "Qoldiq": 9,
+      "Pct": 85.2
+    },
+    {
+      "Viloyat": "Навоий вилояти",
+      "Baseline": 123,
+      "Qilgan": 104,
+      "Qoldiq": 19,
+      "Pct": 84.6
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Baseline": 143,
+      "Qilgan": 111,
+      "Qoldiq": 32,
+      "Pct": 77.6
+    }
+  ],
+  "shahar": [
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Булоқбоши тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Бўстон тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Жалақудуқ тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Улуғнор тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Хўжаобод тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Қўрғонтепа тумани",
+      "Baseline": 6,
+      "Qilgan": 6,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Мархамат тумани",
+      "Baseline": 40,
+      "Qilgan": 37,
+      "Qoldiq": 3,
+      "Pct": 92.5
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Избоскан тумани",
+      "Baseline": 12,
+      "Qilgan": 11,
+      "Qoldiq": 1,
+      "Pct": 91.7
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Асака тумани",
+      "Baseline": 47,
+      "Qilgan": 43,
+      "Qoldiq": 4,
+      "Pct": 91.5
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Шахрихон тумани",
+      "Baseline": 21,
+      "Qilgan": 19,
+      "Qoldiq": 2,
+      "Pct": 90.5
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Андижон шаҳар",
+      "Baseline": 62,
+      "Qilgan": 56,
+      "Qoldiq": 6,
+      "Pct": 90.3
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Андижон тумани",
+      "Baseline": 19,
+      "Qilgan": 17,
+      "Qoldiq": 2,
+      "Pct": 89.5
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Пахтаобод тумани",
+      "Baseline": 28,
+      "Qilgan": 25,
+      "Qoldiq": 3,
+      "Pct": 89.3
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Олтинкўл тумани",
+      "Baseline": 6,
+      "Qilgan": 5,
+      "Qoldiq": 1,
+      "Pct": 83.3
+    },
+    {
+      "Viloyat": "Андижон вилояти",
+      "Shahar": "Балиқчи тумани",
+      "Baseline": 2,
+      "Qilgan": 1,
+      "Qoldiq": 1,
+      "Pct": 50.0
+    },
+    {
+      "Viloyat": "Бухоро вилояти",
+      "Shahar": "Бухоро тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Бухоро вилояти",
+      "Shahar": "Вобкент тумани",
+      "Baseline": 28,
+      "Qilgan": 28,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Бухоро вилояти",
+      "Shahar": "Когон шаҳар",
+      "Baseline": 25,
+      "Qilgan": 25,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Бухоро вилояти",
+      "Shahar": "Ромитан тумани",
+      "Baseline": 14,
+      "Qilgan": 14,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Бухоро вилояти",
+      "Shahar": "Қоровулбозор тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Бухоро вилояти",
+      "Shahar": "Қоракўл тумани",
+      "Baseline": 35,
+      "Qilgan": 34,
+      "Qoldiq": 1,
+      "Pct": 97.1
+    },
+    {
+      "Viloyat": "Бухоро вилояти",
+      "Shahar": "Когон тумани",
+      "Baseline": 20,
+      "Qilgan": 19,
+      "Qoldiq": 1,
+      "Pct": 95.0
+    },
+    {
+      "Viloyat": "Бухоро вилояти",
+      "Shahar": "Ғиждувон тумани",
+      "Baseline": 67,
+      "Qilgan": 63,
+      "Qoldiq": 4,
+      "Pct": 94.0
+    },
+    {
+      "Viloyat": "Бухоро вилояти",
+      "Shahar": "Шофиркон тумани",
+      "Baseline": 24,
+      "Qilgan": 22,
+      "Qoldiq": 2,
+      "Pct": 91.7
+    },
+    {
+      "Viloyat": "Бухоро вилояти",
+      "Shahar": "Бухоро шаҳар",
+      "Baseline": 22,
+      "Qilgan": 19,
+      "Qoldiq": 3,
+      "Pct": 86.4
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Shahar": "Бахмал тумани",
+      "Baseline": 5,
+      "Qilgan": 5,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Shahar": "Дўстлик тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Shahar": "Зарбдор тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Shahar": "Зафаробод тумани",
+      "Baseline": 4,
+      "Qilgan": 4,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Shahar": "Фориш тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Shahar": "Шароф Рашидов тумани",
+      "Baseline": 32,
+      "Qilgan": 31,
+      "Qoldiq": 1,
+      "Pct": 96.9
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Shahar": "Мирзачўл тумани",
+      "Baseline": 21,
+      "Qilgan": 20,
+      "Qoldiq": 1,
+      "Pct": 95.2
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Shahar": "Пахтакор тумани",
+      "Baseline": 17,
+      "Qilgan": 16,
+      "Qoldiq": 1,
+      "Pct": 94.1
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Shahar": "Жиззах шаҳар",
+      "Baseline": 75,
+      "Qilgan": 70,
+      "Qoldiq": 5,
+      "Pct": 93.3
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Shahar": "Зомин тумани",
+      "Baseline": 7,
+      "Qilgan": 6,
+      "Qoldiq": 1,
+      "Pct": 85.7
+    },
+    {
+      "Viloyat": "Жиззах вилояти",
+      "Shahar": "Ғаллаорол тумани",
+      "Baseline": 9,
+      "Qilgan": 7,
+      "Qoldiq": 2,
+      "Pct": 77.8
+    },
+    {
+      "Viloyat": "Навоий вилояти",
+      "Shahar": "Навбаҳор тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Навоий вилояти",
+      "Shahar": "Нурота тумани",
+      "Baseline": 4,
+      "Qilgan": 4,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Навоий вилояти",
+      "Shahar": "Ғозғон шаҳар",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Навоий вилояти",
+      "Shahar": "Зарафшон шаҳар",
+      "Baseline": 18,
+      "Qilgan": 17,
+      "Qoldiq": 1,
+      "Pct": 94.4
+    },
+    {
+      "Viloyat": "Навоий вилояти",
+      "Shahar": "Қизилтепа тумани",
+      "Baseline": 33,
+      "Qilgan": 29,
+      "Qoldiq": 4,
+      "Pct": 87.9
+    },
+    {
+      "Viloyat": "Навоий вилояти",
+      "Shahar": "Навоий шаҳар",
+      "Baseline": 38,
+      "Qilgan": 33,
+      "Qoldiq": 5,
+      "Pct": 86.8
+    },
+    {
+      "Viloyat": "Навоий вилояти",
+      "Shahar": "Учкудуқ шаҳар",
+      "Baseline": 9,
+      "Qilgan": 7,
+      "Qoldiq": 2,
+      "Pct": 77.8
+    },
+    {
+      "Viloyat": "Навоий вилояти",
+      "Shahar": "Кармана тумани",
+      "Baseline": 11,
+      "Qilgan": 8,
+      "Qoldiq": 3,
+      "Pct": 72.7
+    },
+    {
+      "Viloyat": "Навоий вилояти",
+      "Shahar": "Конимех тумани",
+      "Baseline": 2,
+      "Qilgan": 1,
+      "Qoldiq": 1,
+      "Pct": 50.0
+    },
+    {
+      "Viloyat": "Навоий вилояти",
+      "Shahar": "Хатирчи тумани",
+      "Baseline": 4,
+      "Qilgan": 1,
+      "Qoldiq": 3,
+      "Pct": 25.0
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Косонсой тумани",
+      "Baseline": 30,
+      "Qilgan": 30,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Наманган тумани",
+      "Baseline": 8,
+      "Qilgan": 8,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Наманган шаҳар",
+      "Baseline": 45,
+      "Qilgan": 45,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Норин тумани",
+      "Baseline": 5,
+      "Qilgan": 5,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Чортоқ тумани",
+      "Baseline": 27,
+      "Qilgan": 27,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Чуст тумани",
+      "Baseline": 16,
+      "Qilgan": 16,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Янгиқўрғон тумани",
+      "Baseline": 5,
+      "Qilgan": 5,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Уйчи тумани",
+      "Baseline": 60,
+      "Qilgan": 59,
+      "Qoldiq": 1,
+      "Pct": 98.3
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Давлатобод тумани",
+      "Baseline": 41,
+      "Qilgan": 40,
+      "Qoldiq": 1,
+      "Pct": 97.6
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Янги Наманган тумани",
+      "Baseline": 22,
+      "Qilgan": 21,
+      "Qoldiq": 1,
+      "Pct": 95.5
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Учқўрғон тумани",
+      "Baseline": 29,
+      "Qilgan": 27,
+      "Qoldiq": 2,
+      "Pct": 93.1
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Тўрақўрғон тумани",
+      "Baseline": 42,
+      "Qilgan": 39,
+      "Qoldiq": 3,
+      "Pct": 92.9
+    },
+    {
+      "Viloyat": "Наманган вилояти",
+      "Shahar": "Поп тумани",
+      "Baseline": 3,
+      "Qilgan": 2,
+      "Qoldiq": 1,
+      "Pct": 66.7
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Иштихон тумани",
+      "Baseline": 7,
+      "Qilgan": 7,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Каттақўрғон тумани",
+      "Baseline": 4,
+      "Qilgan": 4,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Каттақўрғон шаҳар",
+      "Baseline": 8,
+      "Qilgan": 8,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Нарпай тумани",
+      "Baseline": 4,
+      "Qilgan": 4,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Паяриқ тумани",
+      "Baseline": 4,
+      "Qilgan": 4,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Қўшработ тумани",
+      "Baseline": 5,
+      "Qilgan": 5,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Пастдарғом тумани",
+      "Baseline": 64,
+      "Qilgan": 63,
+      "Qoldiq": 1,
+      "Pct": 98.4
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Ургут тумани",
+      "Baseline": 118,
+      "Qilgan": 113,
+      "Qoldiq": 5,
+      "Pct": 95.8
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Самарқанд тумани",
+      "Baseline": 23,
+      "Qilgan": 22,
+      "Qoldiq": 1,
+      "Pct": 95.7
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Жомбой тумани",
+      "Baseline": 21,
+      "Qilgan": 20,
+      "Qoldiq": 1,
+      "Pct": 95.2
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Самарқанд шаҳар",
+      "Baseline": 138,
+      "Qilgan": 130,
+      "Qoldiq": 8,
+      "Pct": 94.2
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Нуробод тумани",
+      "Baseline": 29,
+      "Qilgan": 27,
+      "Qoldiq": 2,
+      "Pct": 93.1
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Оқдарё тумани",
+      "Baseline": 5,
+      "Qilgan": 4,
+      "Qoldiq": 1,
+      "Pct": 80.0
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Тайлоқ тумани",
+      "Baseline": 6,
+      "Qilgan": 4,
+      "Qoldiq": 2,
+      "Pct": 66.7
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Булунғур тумани",
+      "Baseline": 9,
+      "Qilgan": 4,
+      "Qoldiq": 5,
+      "Pct": 44.4
+    },
+    {
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar": "Пахтачи тумани",
+      "Baseline": 5,
+      "Qilgan": 2,
+      "Qoldiq": 3,
+      "Pct": 40.0
+    },
+    {
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar": "Боёвут тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar": "Гулистон тумани",
+      "Baseline": 4,
+      "Qilgan": 4,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar": "Сардоба тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar": "Ховос тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar": "Янгиер шаҳар",
+      "Baseline": 5,
+      "Qilgan": 5,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar": "Мирзаобод тумани",
+      "Baseline": 9,
+      "Qilgan": 8,
+      "Qoldiq": 1,
+      "Pct": 88.9
+    },
+    {
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar": "Гулистон шаҳар",
+      "Baseline": 31,
+      "Qilgan": 26,
+      "Qoldiq": 5,
+      "Pct": 83.9
+    },
+    {
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar": "Оқолтин тумани",
+      "Baseline": 5,
+      "Qilgan": 4,
+      "Qoldiq": 1,
+      "Pct": 80.0
+    },
+    {
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar": "Сирдарё тумани",
+      "Baseline": 3,
+      "Qilgan": 1,
+      "Qoldiq": 2,
+      "Pct": 33.3
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Ангор тумани",
+      "Baseline": 9,
+      "Qilgan": 9,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Бандихон тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Бойсун тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Жарқўрғон тумани",
+      "Baseline": 4,
+      "Qilgan": 4,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Музработ тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Олтинсой тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Сариосиё тумани",
+      "Baseline": 4,
+      "Qilgan": 4,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Термиз тумани",
+      "Baseline": 20,
+      "Qilgan": 20,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Узун тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Шеробод тумани",
+      "Baseline": 36,
+      "Qilgan": 36,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Шўрчи тумани",
+      "Baseline": 4,
+      "Qilgan": 4,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Денов тумани",
+      "Baseline": 107,
+      "Qilgan": 101,
+      "Qoldiq": 6,
+      "Pct": 94.4
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Термиз шаҳар",
+      "Baseline": 43,
+      "Qilgan": 40,
+      "Qoldiq": 3,
+      "Pct": 93.0
+    },
+    {
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar": "Қумқўрғон тумани",
+      "Baseline": 14,
+      "Qilgan": 13,
+      "Qoldiq": 1,
+      "Pct": 92.9
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Бекобод тумани",
+      "Baseline": 5,
+      "Qilgan": 5,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Бекобод шаҳар",
+      "Baseline": 24,
+      "Qilgan": 24,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Нурафшон шаҳар",
+      "Baseline": 24,
+      "Qilgan": 24,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Оҳангарон шаҳар",
+      "Baseline": 5,
+      "Qilgan": 5,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Пскент тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Чиноз тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Янгийўл шаҳар",
+      "Baseline": 27,
+      "Qilgan": 27,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Қийичирчиқ тумани",
+      "Baseline": 5,
+      "Qilgan": 5,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Ўртачирчиқ тумани",
+      "Baseline": 34,
+      "Qilgan": 33,
+      "Qoldiq": 1,
+      "Pct": 97.1
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Ангрен шаҳар",
+      "Baseline": 35,
+      "Qilgan": 34,
+      "Qoldiq": 1,
+      "Pct": 97.1
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Янгийўл тумани",
+      "Baseline": 34,
+      "Qilgan": 33,
+      "Qoldiq": 1,
+      "Pct": 97.1
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Зангиота тумани",
+      "Baseline": 30,
+      "Qilgan": 29,
+      "Qoldiq": 1,
+      "Pct": 96.7
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Бўстонлиқ тумани",
+      "Baseline": 28,
+      "Qilgan": 27,
+      "Qoldiq": 1,
+      "Pct": 96.4
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Юқоричирчиқ тумани",
+      "Baseline": 18,
+      "Qilgan": 17,
+      "Qoldiq": 1,
+      "Pct": 94.4
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Тошкент тумани",
+      "Baseline": 29,
+      "Qilgan": 27,
+      "Qoldiq": 2,
+      "Pct": 93.1
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Қибрай тумани",
+      "Baseline": 19,
+      "Qilgan": 17,
+      "Qoldiq": 2,
+      "Pct": 89.5
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Оҳангарон тумани",
+      "Baseline": 8,
+      "Qilgan": 7,
+      "Qoldiq": 1,
+      "Pct": 87.5
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Олмалиқ шаҳар",
+      "Baseline": 13,
+      "Qilgan": 11,
+      "Qoldiq": 2,
+      "Pct": 84.6
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Чирчиқ шаҳар",
+      "Baseline": 7,
+      "Qilgan": 5,
+      "Qoldiq": 2,
+      "Pct": 71.4
+    },
+    {
+      "Viloyat": "Тошкент вилояти",
+      "Shahar": "Оққўрғон тумани",
+      "Baseline": 3,
+      "Qilgan": 2,
+      "Qoldiq": 1,
+      "Pct": 66.7
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Яшнобод тумани",
+      "Baseline": 86,
+      "Qilgan": 86,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Чилонзор тумани",
+      "Baseline": 122,
+      "Qilgan": 121,
+      "Qoldiq": 1,
+      "Pct": 99.2
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Шайхонтохур тумани",
+      "Baseline": 85,
+      "Qilgan": 84,
+      "Qoldiq": 1,
+      "Pct": 98.8
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Сирғали тумани",
+      "Baseline": 74,
+      "Qilgan": 73,
+      "Qoldiq": 1,
+      "Pct": 98.6
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Учтепа тумани",
+      "Baseline": 104,
+      "Qilgan": 102,
+      "Qoldiq": 2,
+      "Pct": 98.1
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Юнусобод тумани",
+      "Baseline": 95,
+      "Qilgan": 93,
+      "Qoldiq": 2,
+      "Pct": 97.9
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Мирзо Улуғбек тумани",
+      "Baseline": 88,
+      "Qilgan": 86,
+      "Qoldiq": 2,
+      "Pct": 97.7
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Янгихаёт тумани",
+      "Baseline": 44,
+      "Qilgan": 43,
+      "Qoldiq": 1,
+      "Pct": 97.7
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Бектемир тумани",
+      "Baseline": 74,
+      "Qilgan": 72,
+      "Qoldiq": 2,
+      "Pct": 97.3
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Олмазор тумани",
+      "Baseline": 143,
+      "Qilgan": 139,
+      "Qoldiq": 4,
+      "Pct": 97.2
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Миробод тумани",
+      "Baseline": 69,
+      "Qilgan": 67,
+      "Qoldiq": 2,
+      "Pct": 97.1
+    },
+    {
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar": "Яккасарой тумани",
+      "Baseline": 67,
+      "Qilgan": 65,
+      "Qoldiq": 2,
+      "Pct": 97.0
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Ёзёвон тумани",
+      "Baseline": 6,
+      "Qilgan": 6,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Бешариқ тумани",
+      "Baseline": 64,
+      "Qilgan": 64,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Сўх тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Фарғона тумани",
+      "Baseline": 13,
+      "Qilgan": 13,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Фурқат тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Қувасой шаҳар",
+      "Baseline": 6,
+      "Qilgan": 6,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Қўштепа тумани",
+      "Baseline": 7,
+      "Qilgan": 7,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Марғилон шаҳар",
+      "Baseline": 32,
+      "Qilgan": 31,
+      "Qoldiq": 1,
+      "Pct": 96.9
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Фарғона шаҳар",
+      "Baseline": 80,
+      "Qilgan": 77,
+      "Qoldiq": 3,
+      "Pct": 96.2
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Риштон тумани",
+      "Baseline": 57,
+      "Qilgan": 54,
+      "Qoldiq": 3,
+      "Pct": 94.7
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Олтиариқ тумани",
+      "Baseline": 16,
+      "Qilgan": 15,
+      "Qoldiq": 1,
+      "Pct": 93.8
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Қува тумани",
+      "Baseline": 79,
+      "Qilgan": 73,
+      "Qoldiq": 6,
+      "Pct": 92.4
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Ўзбекистон тумани",
+      "Baseline": 12,
+      "Qilgan": 11,
+      "Qoldiq": 1,
+      "Pct": 91.7
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Қўқон шаҳар",
+      "Baseline": 23,
+      "Qilgan": 21,
+      "Qoldiq": 2,
+      "Pct": 91.3
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Учкўприк тумани",
+      "Baseline": 8,
+      "Qilgan": 7,
+      "Qoldiq": 1,
+      "Pct": 87.5
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Боғдод тумани",
+      "Baseline": 7,
+      "Qilgan": 6,
+      "Qoldiq": 1,
+      "Pct": 85.7
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Бувайда тумани",
+      "Baseline": 26,
+      "Qilgan": 22,
+      "Qoldiq": 4,
+      "Pct": 84.6
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Тошлоқ тумани",
+      "Baseline": 4,
+      "Qilgan": 3,
+      "Qoldiq": 1,
+      "Pct": 75.0
+    },
+    {
+      "Viloyat": "Фарғона вилояти",
+      "Shahar": "Данғара тумани",
+      "Baseline": 7,
+      "Qilgan": 5,
+      "Qoldiq": 2,
+      "Pct": 71.4
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Боғот тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Тупроққалъа тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Урганч тумани",
+      "Baseline": 16,
+      "Qilgan": 16,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Хива тумани",
+      "Baseline": 20,
+      "Qilgan": 20,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Хива шаҳар",
+      "Baseline": 61,
+      "Qilgan": 61,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Қўшкўпир тумани",
+      "Baseline": 10,
+      "Qilgan": 10,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Хазорасп тумани",
+      "Baseline": 40,
+      "Qilgan": 39,
+      "Qoldiq": 1,
+      "Pct": 97.5
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Шовот тумани",
+      "Baseline": 29,
+      "Qilgan": 28,
+      "Qoldiq": 1,
+      "Pct": 96.6
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Хонқа тумани",
+      "Baseline": 28,
+      "Qilgan": 27,
+      "Qoldiq": 1,
+      "Pct": 96.4
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Гурлан тумани",
+      "Baseline": 80,
+      "Qilgan": 77,
+      "Qoldiq": 3,
+      "Pct": 96.2
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Урганч шаҳар",
+      "Baseline": 67,
+      "Qilgan": 63,
+      "Qoldiq": 4,
+      "Pct": 94.0
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Янгиариқ тумани",
+      "Baseline": 36,
+      "Qilgan": 33,
+      "Qoldiq": 3,
+      "Pct": 91.7
+    },
+    {
+      "Viloyat": "Хоразм вилояти",
+      "Shahar": "Янгибозор тумани",
+      "Baseline": 3,
+      "Qilgan": 2,
+      "Qoldiq": 1,
+      "Pct": 66.7
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Деҳқонобод тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Касби тумани",
+      "Baseline": 5,
+      "Qilgan": 5,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Китоб тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Косон тумани",
+      "Baseline": 4,
+      "Qilgan": 4,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Миришкор тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Муборак тумани",
+      "Baseline": 4,
+      "Qilgan": 4,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Чироқчи тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Шаҳрисабз тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Шаҳрисабз шаҳар",
+      "Baseline": 8,
+      "Qilgan": 8,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Яккабоғ тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Ғузор тумани",
+      "Baseline": 21,
+      "Qilgan": 21,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Қамаши тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Қарши тумани",
+      "Baseline": 10,
+      "Qilgan": 10,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Қарши шаҳар",
+      "Baseline": 49,
+      "Qilgan": 48,
+      "Qoldiq": 1,
+      "Pct": 98.0
+    },
+    {
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar": "Нишон тумани",
+      "Baseline": 8,
+      "Qilgan": 7,
+      "Qoldiq": 1,
+      "Pct": 87.5
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Беруний тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Кегейли тумани",
+      "Baseline": 2,
+      "Qilgan": 2,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Мўйноқ тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Тахтакўпир тумани",
+      "Baseline": 1,
+      "Qilgan": 1,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Чимбой тумани",
+      "Baseline": 3,
+      "Qilgan": 3,
+      "Qoldiq": 0,
+      "Pct": 100.0
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Амударё тумани",
+      "Baseline": 19,
+      "Qilgan": 18,
+      "Qoldiq": 1,
+      "Pct": 94.7
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Тўрткўл тумани",
+      "Baseline": 36,
+      "Qilgan": 33,
+      "Qoldiq": 3,
+      "Pct": 91.7
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Қўнғирот тумани",
+      "Baseline": 6,
+      "Qilgan": 5,
+      "Qoldiq": 1,
+      "Pct": 83.3
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Қораўзак тумани",
+      "Baseline": 3,
+      "Qilgan": 2,
+      "Qoldiq": 1,
+      "Pct": 66.7
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Нукус шаҳар",
+      "Baseline": 48,
+      "Qilgan": 31,
+      "Qoldiq": 17,
+      "Pct": 64.6
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Тахиатош тумани",
+      "Baseline": 5,
+      "Qilgan": 3,
+      "Qoldiq": 2,
+      "Pct": 60.0
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Нукус тумани",
+      "Baseline": 7,
+      "Qilgan": 4,
+      "Qoldiq": 3,
+      "Pct": 57.1
+    },
+    {
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar": "Хўжайли тумани",
+      "Baseline": 9,
+      "Qilgan": 5,
+      "Qoldiq": 4,
+      "Pct": 55.6
+    }
+  ],
+  "faoliyat": [
+    {
+      "Faoliyat": "Адвокатура хизмати",
+      "Baseline": 993,
+      "Qilgan": 953,
+      "Qoldiq": 40,
+      "Pct": 96.0
+    },
+    {
+      "Faoliyat": "Гинекология",
+      "Baseline": 370,
+      "Qilgan": 354,
+      "Qoldiq": 16,
+      "Pct": 95.7
+    },
+    {
+      "Faoliyat": "Ветеринар дорихона ",
+      "Baseline": 185,
+      "Qilgan": 176,
+      "Qoldiq": 9,
+      "Pct": 95.1
+    },
+    {
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар",
+      "Baseline": 505,
+      "Qilgan": 478,
+      "Qoldiq": 27,
+      "Pct": 94.7
+    },
+    {
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар",
+      "Baseline": 1986,
+      "Qilgan": 1874,
+      "Qoldiq": 112,
+      "Pct": 94.4
+    },
+    {
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш",
+      "Baseline": 257,
+      "Qilgan": 241,
+      "Qoldiq": 16,
+      "Pct": 93.8
+    },
+    {
+      "Faoliyat": "ЙЎҚ",
+      "Baseline": 56,
+      "Qilgan": 52,
+      "Qoldiq": 4,
+      "Pct": 92.9
+    },
+    {
+      "Faoliyat": "Темирйўл транспортида йўловчи ташиш хизмати",
+      "Baseline": 37,
+      "Qilgan": 33,
+      "Qoldiq": 4,
+      "Pct": 89.2
+    },
+    {
+      "Faoliyat": "АГНКС (газ)",
+      "Baseline": 13,
+      "Qilgan": 10,
+      "Qoldiq": 3,
+      "Pct": 76.9
+    }
+  ],
+  "pending_records": [
+    {
+      "INN": 311015741,
+      "Korxona nomi": "`SIREUS` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Андижон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312242301,
+      "Korxona nomi": "`ALUBLAZE` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Андижон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 206468752,
+      "Korxona nomi": "`МЕДСЕРВИС КАРДИО` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Андижон шаҳар",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 304617976,
+      "Korxona nomi": "`PROGRES BIZNES SERVIS` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Андижон шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 305744613,
+      "Korxona nomi": "`ALFA TERAPIYA` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Андижон шаҳар",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 311528142,
+      "Korxona nomi": "`CHINA NEW ENERGY GROUP` MAS'ULIYATI CHEKLANGAN JAMIYAT XORIJIY KORXONA",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Андижон шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311544947,
+      "Korxona nomi": "`CHILDREN KLINIK` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Андижон шаҳар",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 312023637,
+      "Korxona nomi": "`SKY LINE LOGISTIC` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Андижон шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 305825535,
+      "Korxona nomi": "ООО `SINO INTERNATIONAL INVEST`",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Асака тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 307878594,
+      "Korxona nomi": "`NUSRAT SAVDO IMPORT` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Асака тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 311173680,
+      "Korxona nomi": "`NUSRAT ASAKA` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Асака тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311725167,
+      "Korxona nomi": "`ROBIYA ELIT TRADE` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Асака тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 207136223,
+      "Korxona nomi": "`BOSTON NIXOL BOGI` FX",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Балиқчи тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 310421626,
+      "Korxona nomi": "`THUNDER POWER` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Избоскан тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 307732895,
+      "Korxona nomi": "`MARHAMAT  TIBBIY  DIAGNOSTIKA` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Мархамат тумани",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 308416701,
+      "Korxona nomi": "`MARHAMAT KELAJAK-NURI` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Мархамат тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 310847435,
+      "Korxona nomi": "`ERSHI OBI HAYOT` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Мархамат тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 303641324,
+      "Korxona nomi": "`BARKAMOL HOSILDOR EYRI` FX",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Олтинкўл тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 301119743,
+      "Korxona nomi": "`AKRAMJON-IXTIYOR` FX",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Пахтаобод тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 305984520,
+      "Korxona nomi": "ООО `IBRATLI EGIZAKLAR`",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Пахтаобод тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 309333797,
+      "Korxona nomi": "`ZARIFA DIAGNOSTIKA SHIFO` XK",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Пахтаобод тумани",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 307533541,
+      "Korxona nomi": "`SHAHRIXON UY-JOY QURILISH 2020` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Шахрихон тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 311064025,
+      "Korxona nomi": "`SAROY STOMA` MCHJ",
+      "Viloyat": "Андижон вилояти",
+      "Shahar/Tuman": "Шахрихон тумани",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 203666034,
+      "Korxona nomi": "`QODIROV` XK",
+      "Viloyat": "Бухоро вилояти",
+      "Shahar/Tuman": "Бухоро шаҳар",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 305089408,
+      "Korxona nomi": "`SILK ROAD NAQSHBAND` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Бухоро вилояти",
+      "Shahar/Tuman": "Бухоро шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 307134469,
+      "Korxona nomi": "`KOGON SAVDO  MARKET PLYUS` MCHJ",
+      "Viloyat": "Бухоро вилояти",
+      "Shahar/Tuman": "Бухоро шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 305149695,
+      "Korxona nomi": "ЧП `RAMAZONOV ASHUR`",
+      "Viloyat": "Бухоро вилояти",
+      "Shahar/Tuman": "Когон тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 301231154,
+      "Korxona nomi": "ООО `SHOFIRKON EKVATORIAL TEKS`",
+      "Viloyat": "Бухоро вилояти",
+      "Shahar/Tuman": "Шофиркон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 305191155,
+      "Korxona nomi": "`NAZAROTA YO'LDOSHEV` OILAVIY KORXONA",
+      "Viloyat": "Бухоро вилояти",
+      "Shahar/Tuman": "Шофиркон тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 302504683,
+      "Korxona nomi": "`FIRDAVS O`KTAM AMON OMADI` MCHJ",
+      "Viloyat": "Бухоро вилояти",
+      "Shahar/Tuman": "Ғиждувон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 307259494,
+      "Korxona nomi": "`ELMAKON PLYUS EDIKFARZ` MChJ",
+      "Viloyat": "Бухоро вилояти",
+      "Shahar/Tuman": "Ғиждувон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 307558881,
+      "Korxona nomi": "СП `LOMAN BARAKA GOLDEN EGGS`",
+      "Viloyat": "Бухоро вилояти",
+      "Shahar/Tuman": "Ғиждувон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 310653170,
+      "Korxona nomi": "`UNLIMITED NEW BUSINNESS FARR` MCHJ",
+      "Viloyat": "Бухоро вилояти",
+      "Shahar/Tuman": "Ғиждувон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 308239447,
+      "Korxona nomi": "`SHAVKATJON SHAXNOZAXON O'QUV MARKAZI` OK",
+      "Viloyat": "Бухоро вилояти",
+      "Shahar/Tuman": "Қоракўл тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 302985743,
+      "Korxona nomi": "`MASTER BILDING PRODUCTS` MCHJ",
+      "Viloyat": "Жиззах вилояти",
+      "Shahar/Tuman": "Жиззах шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 303110779,
+      "Korxona nomi": "`SUG`DIYONA NOTUQIMA MATO` MCHJ",
+      "Viloyat": "Жиззах вилояти",
+      "Shahar/Tuman": "Жиззах шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 310081472,
+      "Korxona nomi": "`THE JIZZAX  TECHNO` MCHJ",
+      "Viloyat": "Жиззах вилояти",
+      "Shahar/Tuman": "Жиззах шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311811037,
+      "Korxona nomi": "`TRUST EDU` MCHJ",
+      "Viloyat": "Жиззах вилояти",
+      "Shahar/Tuman": "Жиззах шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 312437460,
+      "Korxona nomi": "`SURXONCHA TAOMLAR` OK",
+      "Viloyat": "Жиззах вилояти",
+      "Shahar/Tuman": "Жиззах шаҳар",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 311192738,
+      "Korxona nomi": "`APRIL` MCHJ",
+      "Viloyat": "Жиззах вилояти",
+      "Shahar/Tuman": "Зомин тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 311990235,
+      "Korxona nomi": "`ILYOS QIZI DIYORA` MCHJ",
+      "Viloyat": "Жиззах вилояти",
+      "Shahar/Tuman": "Мирзачўл тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 311890114,
+      "Korxona nomi": "`KATTA AYIQ` MCHJ",
+      "Viloyat": "Жиззах вилояти",
+      "Shahar/Tuman": "Пахтакор тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311233409,
+      "Korxona nomi": "`YORQIN UNIVERSAL BEST` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Жиззах вилояти",
+      "Shahar/Tuman": "Шароф Рашидов тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 306519804,
+      "Korxona nomi": "НОУ `SEVIMLI KO`ZMUNCHOQ`",
+      "Viloyat": "Жиззах вилояти",
+      "Shahar/Tuman": "Ғаллаорол тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 306610486,
+      "Korxona nomi": "`YASINE-EDUCATION CENTRE` MCHJ",
+      "Viloyat": "Жиззах вилояти",
+      "Shahar/Tuman": "Ғаллаорол тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 312307194,
+      "Korxona nomi": "`SHERZODS ENGLISH` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Зарафшон шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 300203846,
+      "Korxona nomi": "`XURRAM SAVDO FAYZ` MCHJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Кармана тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 310731834,
+      "Korxona nomi": "`ZIIS BARAKATIH PHARM` MCHJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Кармана тумани",
+      "Faoliyat": "Ветеринар дорихона "
+    },
+    {
+      "INN": 311994633,
+      "Korxona nomi": "`FOODS DISTRIBUTOR 786` MCHJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Кармана тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 306605713,
+      "Korxona nomi": "`MOHINUR MUBINA KELAJAGI` XK",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Конимех тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 200002878,
+      "Korxona nomi": "`QIZILQUMSEMENT` AJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Навоий шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 300597998,
+      "Korxona nomi": "`NAVOIY AVTOTRANSXIZMAT` MChJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Навоий шаҳар",
+      "Faoliyat": "Темирйўл транспортида йўловчи ташиш хизмати"
+    },
+    {
+      "INN": 306167910,
+      "Korxona nomi": "`BIZNES KLASS PARTNIOR` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Навоий шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 309020292,
+      "Korxona nomi": "`JAMIL MEDIK` MCHJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Навоий шаҳар",
+      "Faoliyat": "Ветеринар дорихона "
+    },
+    {
+      "INN": 312571921,
+      "Korxona nomi": "`ZAMIN NAVOI MMM` MCHJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Навоий шаҳар",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 307888962,
+      "Korxona nomi": "`BARAKA CHORVA KLASTER UCHQUDUQ` MCHJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Учкудуқ шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 309693650,
+      "Korxona nomi": "`ERNAR-BIZNES-BAQSHAQ` MCHJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Учкудуқ шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 302077875,
+      "Korxona nomi": "SANJARBEK SAVDO SHAMS  X-K",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Хатирчи тумани",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 309374865,
+      "Korxona nomi": "`HB INVEST CORP` MCHJ XK",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Хатирчи тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 310984417,
+      "Korxona nomi": "`SENSER` MCHJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Хатирчи тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 305395787,
+      "Korxona nomi": "`ALISHER-AVTO-TRANS` MCHJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Қизилтепа тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 306793631,
+      "Korxona nomi": "ООО `DEMIRBEK SABRINAXON KELAJAGI`",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Қизилтепа тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 309618797,
+      "Korxona nomi": "`PORLOQ SHABNAM KELAJAGI` MCHJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Қизилтепа тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312477412,
+      "Korxona nomi": "`GARDIYON OBODI` MCHJ",
+      "Viloyat": "Навоий вилояти",
+      "Shahar/Tuman": "Қизилтепа тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311293682,
+      "Korxona nomi": "`DARXON 1717` MCHJ",
+      "Viloyat": "Наманган вилояти",
+      "Shahar/Tuman": "Давлатобод тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 307384546,
+      "Korxona nomi": "`THE  GARDEN` MCHJ",
+      "Viloyat": "Наманган вилояти",
+      "Shahar/Tuman": "Поп тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 303110564,
+      "Korxona nomi": "`EGAMBERDI FAYZ` XK",
+      "Viloyat": "Наманган вилояти",
+      "Shahar/Tuman": "Тўрақўрғон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 310818827,
+      "Korxona nomi": "`TUMORCHA SWEETS` OILAVIY KORXONA",
+      "Viloyat": "Наманган вилояти",
+      "Shahar/Tuman": "Тўрақўрғон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311845359,
+      "Korxona nomi": "`DAVR DIYOR SOFT` MCHJ",
+      "Viloyat": "Наманган вилояти",
+      "Shahar/Tuman": "Тўрақўрғон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 300863761,
+      "Korxona nomi": "`SUPER BREAD` MCHJ",
+      "Viloyat": "Наманган вилояти",
+      "Shahar/Tuman": "Уйчи тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 306753625,
+      "Korxona nomi": "ЧП `COMFORT TECHNO CITY`",
+      "Viloyat": "Наманган вилояти",
+      "Shahar/Tuman": "Учқўрғон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311466774,
+      "Korxona nomi": "`CHEAP DRUG MEDICATION` MCHJ",
+      "Viloyat": "Наманган вилояти",
+      "Shahar/Tuman": "Учқўрғон тумани",
+      "Faoliyat": "Ветеринар дорихона "
+    },
+    {
+      "INN": 306275603,
+      "Korxona nomi": "ООО `EXPORT XIZMAT`",
+      "Viloyat": "Наманган вилояти",
+      "Shahar/Tuman": "Янги Наманган тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 304689183,
+      "Korxona nomi": "`ALISHOX MEBEL SERVIS` MChJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Булунғур тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 307954864,
+      "Korxona nomi": "`RAVOTXO`JA TOSH` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Булунғур тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 309308669,
+      "Korxona nomi": "`AYENDAM` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Булунғур тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 309997081,
+      "Korxona nomi": "`FARMATSEVT ALIMJANOVNA` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Булунғур тумани",
+      "Faoliyat": "Ветеринар дорихона "
+    },
+    {
+      "INN": 312021860,
+      "Korxona nomi": "`XAYOTBAXSH SUVI` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Булунғур тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 303293765,
+      "Korxona nomi": "`JOMBOY SAVDO BIZNES` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Жомбой тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 307812369,
+      "Korxona nomi": "`NUROBOD SHAHAR MASKANI` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Нуробод тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 309149147,
+      "Korxona nomi": "`UMID SAZAG`ON NONLARI` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Нуробод тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 305594018,
+      "Korxona nomi": "`DILAFRO'Z SHIFO` MChJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Оқдарё тумани",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 307565351,
+      "Korxona nomi": "`CHINORA NUTRITION` XK",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Пастдарғом тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 200769137,
+      "Korxona nomi": "`GRANIT` AKSIYADORLIK JAMIYATI",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Пахтачи тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 305666852,
+      "Korxona nomi": "`LATIFXON LAZIZXON` OK",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Пахтачи тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 308536663,
+      "Korxona nomi": "`ALISHER U DEVELOPER COMPANY` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Пахтачи тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 308366725,
+      "Korxona nomi": "ЧП `SHAXODAT ZUHRO`",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Самарқанд тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 205669147,
+      "Korxona nomi": "`GO'ZAL NIHOL` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Самарқанд шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 306728963,
+      "Korxona nomi": "ООО `SAM MAXLIGHT`",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Самарқанд шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 307988807,
+      "Korxona nomi": "ООО `SAM SHERIN 786`",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Самарқанд шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 309434283,
+      "Korxona nomi": "`ELEMENTS-N1` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Самарқанд шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 309563417,
+      "Korxona nomi": "`YASHIL YO`L 786` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Самарқанд шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311604870,
+      "Korxona nomi": "`SILK ROAD TEA STORY` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Самарқанд шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311893972,
+      "Korxona nomi": "`SAM CHOSH SUT 786` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Самарқанд шаҳар",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 312539974,
+      "Korxona nomi": "`SAM VINO VODKA` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Самарқанд шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 307744564,
+      "Korxona nomi": "ООО `SS XIRMONGA BARAKA`",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Тайлоқ тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 307859508,
+      "Korxona nomi": "ЧП `ZAR MED FARM TRAD`",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Тайлоқ тумани",
+      "Faoliyat": "Ветеринар дорихона "
+    },
+    {
+      "INN": 305723433,
+      "Korxona nomi": "`POCHVON SAVDO STEL` XK",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Ургут тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 306134500,
+      "Korxona nomi": "`G'AYBULLO OTA QURULISH SERVICE` OK",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Ургут тумани",
+      "Faoliyat": "ЙЎҚ"
+    },
+    {
+      "INN": 310029147,
+      "Korxona nomi": "`LAZER NITKANKA` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Ургут тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 311742692,
+      "Korxona nomi": "`FUTURE EXPORT SERVICE` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Ургут тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312403020,
+      "Korxona nomi": "`AZIZBEK-AKOBIR BUILDING MATERIALS TRADE` MCHJ",
+      "Viloyat": "Самарқанд вилояти",
+      "Shahar/Tuman": "Ургут тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311215983,
+      "Korxona nomi": "`OMAD CHOYXONA` MCHJ",
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar/Tuman": "Гулистон шаҳар",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 311419333,
+      "Korxona nomi": "`AS JIZ BIZ HOUSE` MCHJ",
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar/Tuman": "Гулистон шаҳар",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 311886893,
+      "Korxona nomi": "`OPEN AND TRANSPARENT BUSINESS` MCHJ",
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar/Tuman": "Гулистон шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312195012,
+      "Korxona nomi": "`MUHIBULLO JASUR HAMKOR` MCHJ",
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar/Tuman": "Гулистон шаҳар",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 312570076,
+      "Korxona nomi": "`SHASHLIK HOUSE GULISTON` MCHJ",
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar/Tuman": "Гулистон шаҳар",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 307652354,
+      "Korxona nomi": "`MIRZACHO`L BALIQCHILIK CLUSTERI` MCHJ",
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar/Tuman": "Мирзаобод тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 307376420,
+      "Korxona nomi": "`OQOLTIN JAMOL` MCHJ",
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar/Tuman": "Оқолтин тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 200325998,
+      "Korxona nomi": "`YO`LREFTRANS` AKSIYADORLIK JAMIYATI",
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar/Tuman": "Сирдарё тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 302273782,
+      "Korxona nomi": "`SUCCESS AND LUCK` MCHJ",
+      "Viloyat": "Сирдарё вилояти",
+      "Shahar/Tuman": "Сирдарё тумани",
+      "Faoliyat": "АГНКС (газ)"
+    },
+    {
+      "INN": 202438680,
+      "Korxona nomi": "ЛУТФУЛЛО ДФХ",
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar/Tuman": "Денов тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 304939891,
+      "Korxona nomi": "ЧП `ILXOM - FAYZ`",
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar/Tuman": "Денов тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 310712896,
+      "Korxona nomi": "`IRISMATOVLAR` OK",
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar/Tuman": "Денов тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 310963521,
+      "Korxona nomi": "`XUDAYNAZAR TANGIROVLAR` OK",
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar/Tuman": "Денов тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311310011,
+      "Korxona nomi": "`SURXON ISHONCH TOUR` MCHJ",
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar/Tuman": "Денов тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311492388,
+      "Korxona nomi": "`AUTO PARTNER MOTORS` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar/Tuman": "Денов тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 304115715,
+      "Korxona nomi": "XK NAFIS GULLAR SURXON",
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar/Tuman": "Термиз шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311413895,
+      "Korxona nomi": "`CANDY TERMIZ` MCHJ",
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar/Tuman": "Термиз шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312295093,
+      "Korxona nomi": "`MUKHRIDDIN` MCHJ",
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar/Tuman": "Термиз шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 304325461,
+      "Korxona nomi": "`BAXODIR IMKON` MCHJ",
+      "Viloyat": "Сурхондарё вилояти",
+      "Shahar/Tuman": "Қумқўрғон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311114555,
+      "Korxona nomi": "`MIRVOXID SOXIBA MEBELLARI` OILAVIY KORXONA",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Ўртачирчиқ тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 307686154,
+      "Korxona nomi": "`LOLA 222` MCHJ",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Ангрен шаҳар",
+      "Faoliyat": "ЙЎҚ"
+    },
+    {
+      "INN": 308351199,
+      "Korxona nomi": "`RUSTAMBEK ASAL MUBINA` OILAVIY KORXONA",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Бўстонлиқ тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 312100754,
+      "Korxona nomi": "`XO DO DO` MCHJ XK",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Зангиота тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 202328794,
+      "Korxona nomi": "АО `OLMALIQ KON-METALLURGIYA KOMBINATI`",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Олмалиқ шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 308351831,
+      "Korxona nomi": "`ND FEMALE GROUP` MCHJ",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Олмалиқ шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311473617,
+      "Korxona nomi": "`SAFO CITY` MCHJ",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Оққўрғон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 206258182,
+      "Korxona nomi": "`ANGREN ISTIQBOL BARAKA` FERMER XO‘JALIGI",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Оҳангарон тумани",
+      "Faoliyat": "ЙЎҚ"
+    },
+    {
+      "INN": 301283011,
+      "Korxona nomi": "ООО `IBRAT RIVOJ`",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Тошкент тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311220528,
+      "Korxona nomi": "`LION-YANGIYER` MCHJ",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Тошкент тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 204651661,
+      "Korxona nomi": "`UZTEX GROUP` MCHJ QK",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Чирчиқ шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311242254,
+      "Korxona nomi": "`PLATINA TOM CITY` MCHJ",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Чирчиқ шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312139870,
+      "Korxona nomi": "`AQUA BAR` MCHJ",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Юқоричирчиқ тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 311627866,
+      "Korxona nomi": "`EXPRESS OIL TRADE` MCHJ",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Янгийўл тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 305902265,
+      "Korxona nomi": "`NERUD SARMOYA` MCHJ",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Қибрай тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312328675,
+      "Korxona nomi": "`BB LAB` MCHJ",
+      "Viloyat": "Тошкент вилояти",
+      "Shahar/Tuman": "Қибрай тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311052199,
+      "Korxona nomi": "`BY ETIKETKA` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Бектемир тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 311956014,
+      "Korxona nomi": "`TRAST GAZ OIL` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Бектемир тумани",
+      "Faoliyat": "АГНКС (газ)"
+    },
+    {
+      "INN": 305577006,
+      "Korxona nomi": "`PERVIY SHAG` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Мирзо Улуғбек тумани",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 312322296,
+      "Korxona nomi": "`AURORA FOODS` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Мирзо Улуғбек тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 306023117,
+      "Korxona nomi": "ЧП `AURASERVICE`",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Миробод тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 310132409,
+      "Korxona nomi": "`OMADLI DODA` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Миробод тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 301055555,
+      "Korxona nomi": "`SALIHOV QAXRAMON` XK",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Олмазор тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 301316349,
+      "Korxona nomi": "`ASL-E`ZOZ NON` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Олмазор тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311710265,
+      "Korxona nomi": "`SAKINAT AGRO` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Олмазор тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312114357,
+      "Korxona nomi": "`AVTOMASTER XAYOT` OK",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Олмазор тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 311643619,
+      "Korxona nomi": "`OTOSH` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Сирғали тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 304551253,
+      "Korxona nomi": "`DENTAL FANTASY` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Учтепа тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311853673,
+      "Korxona nomi": "`SNAB GOROD` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Учтепа тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 305209295,
+      "Korxona nomi": "`TRAVEL ORNAMENT TRANSPORTATION SERVICES` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Чилонзор тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 309275711,
+      "Korxona nomi": "`B-I-G-CONSALT` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Шайхонтохур тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 308619851,
+      "Korxona nomi": "`NOZIMA BOBUR SCIENCE OF POWER` OILAVIY KORXONA",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Юнусобод тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 311530728,
+      "Korxona nomi": "`GRAFF FOOD` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Юнусобод тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 309523798,
+      "Korxona nomi": "`INFIN TOUR` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Яккасарой тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 311024217,
+      "Korxona nomi": "`ARCADA CENTER` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Яккасарой тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 311495139,
+      "Korxona nomi": "`VODIY OSHLARI N1` MCHJ",
+      "Viloyat": "Тошкент шаҳри",
+      "Shahar/Tuman": "Янгихаёт тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 200190511,
+      "Korxona nomi": "`DOSTON` FX",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Ўзбекистон тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 306559288,
+      "Korxona nomi": "`AGRO EXPORT ALYANS` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Боғдод тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 305421137,
+      "Korxona nomi": "`VIP EXPORT` MCHJ",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Бувайда тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 306040469,
+      "Korxona nomi": "`KOMILJON SAXOVAT INVEST` OK",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Бувайда тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 309797354,
+      "Korxona nomi": "`MED APTECHKA FARM` MCHJ",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Бувайда тумани",
+      "Faoliyat": "Ветеринар дорихона "
+    },
+    {
+      "INN": 312508292,
+      "Korxona nomi": "`BILOL-SFO 555` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Бувайда тумани",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 302996516,
+      "Korxona nomi": "`REAL KABEL INVEST ` MCHJ",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Данғара тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 305603130,
+      "Korxona nomi": "`BEST FRESH MILK` MCHJ",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Данғара тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 300140578,
+      "Korxona nomi": "`VODIY SAFARI TRANS` MCHJ",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Марғилон шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 311718824,
+      "Korxona nomi": "`VODIY BEST FRUIT` MCHJ",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Олтиариқ тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 200183789,
+      "Korxona nomi": "`RISHTON SAVDO INVEST` MCHJ",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Риштон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 310984646,
+      "Korxona nomi": "`BOZOROV MEDIKAL` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Риштон тумани",
+      "Faoliyat": "Ветеринар дорихона "
+    },
+    {
+      "INN": 311917631,
+      "Korxona nomi": "`RISHTON AGRO XIMOYA` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Риштон тумани",
+      "Faoliyat": "Ветеринар дорихона "
+    },
+    {
+      "INN": 205102299,
+      "Korxona nomi": "`SHIFOI  UL MUMYO` XK",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Тошлоқ тумани",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 303437441,
+      "Korxona nomi": "`FAROVON OLIY MAQSAD` Ф/Х",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Учкўприк тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 201364474,
+      "Korxona nomi": "`XUMO` XK",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Фарғона шаҳар",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 311704905,
+      "Korxona nomi": "`CHARH FALAK MILLIY TAOMLARI` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Фарғона шаҳар",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 312147237,
+      "Korxona nomi": "`FERGANA PARRANDA PLYUS` MCHJ",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Фарғона шаҳар",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 306091342,
+      "Korxona nomi": "`LAZZATLI BALIQLI TAOMLAR` XK",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Қува тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 306723013,
+      "Korxona nomi": "ЧП `RUSTAMJON GULZODAXON FAYZI`",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Қува тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 307451945,
+      "Korxona nomi": "ООО `DIAMOND MED DIAGNOSTIKA`",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Қува тумани",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 307748258,
+      "Korxona nomi": "ООО `FAMILY DENTAL PLUS SERVICE`",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Қува тумани",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 309590241,
+      "Korxona nomi": "AXB STARS NTM",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Қува тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 310689316,
+      "Korxona nomi": "`YANGIHAYOT STARS TRADE` MCHJ",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Қува тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 200126834,
+      "Korxona nomi": "`QO`QON BIOKIMYO` AJ",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Қўқон шаҳар",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 305795764,
+      "Korxona nomi": "`BENAZIR TRADE` MCHJ",
+      "Viloyat": "Фарғона вилояти",
+      "Shahar/Tuman": "Қўқон шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 207122992,
+      "Korxona nomi": "ЧП `MATMUROT-BEK DENTA SERVIS`",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Гурлан тумани",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 306642755,
+      "Korxona nomi": "ООО `AKBARJON - SHOXRUZA`",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Гурлан тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311085481,
+      "Korxona nomi": "`URAZBOY OTA-2024` MCHJ",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Гурлан тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 200409060,
+      "Korxona nomi": "АО `URGANCH EKSKAVATOR`",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Урганч шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 300388331,
+      "Korxona nomi": "ООО `XORAZMDOVUDSERVISTRANS`",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Урганч шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 308521398,
+      "Korxona nomi": "`HAPPY FUTURE N AND J` MCHJ",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Урганч шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 312262965,
+      "Korxona nomi": "`XORAZM EVAKUATOR` MCHJ",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Урганч шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 301414962,
+      "Korxona nomi": "`TOYIRJON AMIRXON` MCHJ",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Хазорасп тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 306283815,
+      "Korxona nomi": "`BAXT XUR PLAST` ОК",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Хонқа тумани",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 312348231,
+      "Korxona nomi": "`BOBUR AFSONA` MCHJ",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Шовот тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 310697568,
+      "Korxona nomi": "`AXADBEK QURILISH` OK",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Янгиариқ тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 311232361,
+      "Korxona nomi": "`OSTONA ASL BARAKA` MCHJ",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Янгиариқ тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312570306,
+      "Korxona nomi": "`YANGIARIQ OILA BASSEYN` OK",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Янгиариқ тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 311882424,
+      "Korxona nomi": "`URGANCH SETKA BALIQ` MCHJ",
+      "Viloyat": "Хоразм вилояти",
+      "Shahar/Tuman": "Янгибозор тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 310339039,
+      "Korxona nomi": "`NISHON MEGA PARVOZI` MCHJ",
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar/Tuman": "Нишон тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311691164,
+      "Korxona nomi": "`ELEVEN PRO MAX OIL` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Қашқадарё вилояти",
+      "Shahar/Tuman": "Қарши шаҳар",
+      "Faoliyat": "АГНКС (газ)"
+    },
+    {
+      "INN": 309771292,
+      "Korxona nomi": "`AMU BLANKET TRADE TEXTIL` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Амударё тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 303867137,
+      "Korxona nomi": "`POOL FORTUNE` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 304905340,
+      "Korxona nomi": "ООО `BEREKETLI FARM`",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус тумани",
+      "Faoliyat": "Ветеринар дорихона "
+    },
+    {
+      "INN": 311544400,
+      "Korxona nomi": "`ORNEKLI JASLAR` NTM",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус тумани",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 302708706,
+      "Korxona nomi": "ООО `ELBEK ULGURJI SAVDO SERVIS`",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 304909121,
+      "Korxona nomi": "NTM NUKUS ZIYADA NUR",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 304918024,
+      "Korxona nomi": "`GULABAT-TAW` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 305249563,
+      "Korxona nomi": "`NUKUS METAN` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 305307886,
+      "Korxona nomi": "ООО `DOM STROY PLUS`",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 309750682,
+      "Korxona nomi": "`AZIYA TOOLS` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 310610747,
+      "Korxona nomi": "`LYAN-MK` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 310960304,
+      "Korxona nomi": "`JU-MA` OK",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311192279,
+      "Korxona nomi": "`SALAMAT FAYZ` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Тилла маҳсулотларни тайёрлаш ва қайта ишлаш"
+    },
+    {
+      "INN": 311242136,
+      "Korxona nomi": "`TURAN CAR MOTORS` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311482614,
+      "Korxona nomi": "`ALAUATDIN TURDIBAEV` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 311660614,
+      "Korxona nomi": "`VALCONO` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 311895162,
+      "Korxona nomi": "`RUSLAN MURATBAYEVICH` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312131804,
+      "Korxona nomi": "`ALPER MEXRIY` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312159214,
+      "Korxona nomi": "`MED PUNKT NUKUS` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Гинекология"
+    },
+    {
+      "INN": 312176676,
+      "Korxona nomi": "`ALMIR` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 312374794,
+      "Korxona nomi": "`KALBAEV` MAS'ULIYATI CHEKLANGAN JAMIYAT",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Нукус шаҳар",
+      "Faoliyat": "Адвокатура хизмати"
+    },
+    {
+      "INN": 306716281,
+      "Korxona nomi": "ООО `ULDAY ANA`",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Тахиатош тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 306889147,
+      "Korxona nomi": "`ERSULTAN MARKET` XK",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Тахиатош тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 205387854,
+      "Korxona nomi": "ОЙБЕК-ОТАБЕК ХАА КТФ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Тўрткўл тумани",
+      "Faoliyat": "Ўқув муассасалари ҳудудидаги ошхоналар"
+    },
+    {
+      "INN": 302745384,
+      "Korxona nomi": "`TO'RTKO'L UNIVERSAL CONSULTING` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Тўрткўл тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 309310644,
+      "Korxona nomi": "`SABINA-NUR OILAVIY KORXONA` OK",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Тўрткўл тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 205350940,
+      "Korxona nomi": "`XOJELI MOTORS` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Хўжайли тумани",
+      "Faoliyat": "Темирйўл транспортида йўловчи ташиш хизмати"
+    },
+    {
+      "INN": 205738915,
+      "Korxona nomi": "DAULET NUKUS MChJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Хўжайли тумани",
+      "Faoliyat": "Темирйўл транспортида йўловчи ташиш хизмати"
+    },
+    {
+      "INN": 300071291,
+      "Korxona nomi": "ЖЕТПИСБАЙ ТРАНС  ЖШЖ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Хўжайли тумани",
+      "Faoliyat": "Темирйўл транспортида йўловчи ташиш хизмати"
+    },
+    {
+      "INN": 301025465,
+      "Korxona nomi": "`XODJEYLI TAXI TIME` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Хўжайли тумани",
+      "Faoliyat": "ЙЎҚ"
+    },
+    {
+      "INN": 311494360,
+      "Korxona nomi": "`AZANUR` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Қораўзак тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    },
+    {
+      "INN": 311275206,
+      "Korxona nomi": "`BUROK` MCHJ",
+      "Viloyat": "Қорақалпоғистон Республикаси",
+      "Shahar/Tuman": "Қўнғирот тумани",
+      "Faoliyat": "Аудио-видео маҳсулотлари, лазер дисклар"
+    }
+  ],
+  "viloyat_files": {
+    "Қашқадарё вилояти": "qashqadaryo_viloyati__2026_07_01.xlsx",
+    "Тошкент шаҳри": "toshkent_shahri__2026_07_01.xlsx",
+    "Наманган вилояти": "namangan_viloyati__2026_07_01.xlsx",
+    "Хоразм вилояти": "horazm_viloyati__2026_07_01.xlsx",
+    "Сурхондарё вилояти": "surhondaryo_viloyati__2026_07_01.xlsx",
+    "Тошкент вилояти": "toshkent_viloyati__2026_07_01.xlsx",
+    "Бухоро вилояти": "buhoro_viloyati__2026_07_01.xlsx",
+    "Фарғона вилояти": "farghona_viloyati__2026_07_01.xlsx",
+    "Жиззах вилояти": "jizzah_viloyati__2026_07_01.xlsx",
+    "Самарқанд вилояти": "samarqand_viloyati__2026_07_01.xlsx",
+    "Андижон вилояти": "andijon_viloyati__2026_07_01.xlsx",
+    "Сирдарё вилояти": "sirdaryo_viloyati__2026_07_01.xlsx",
+    "Навоий вилояти": "navoiy_viloyati__2026_07_01.xlsx",
+    "Қорақалпоғистон Республикаси": "qoraqalpoghiston_respublikasi__2026_07_01.xlsx"
+  }
+}
