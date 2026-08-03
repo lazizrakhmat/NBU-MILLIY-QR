@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBU — QR Registratsiya Monitoring</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Surface */
+  --bg: #FAF8F2;
+  --card: #FFFFFF;
+  --card-alt: #FBFAF5;
+
+  /* Brand */
+  --ink: #0B1430;
+  --ink-2: #1f2543;
+  --gold: #B89968;
+  --gold-soft: #d4bd92;
+  --gold-tint: #f3ead7;
+
+  /* Greys */
+  --g-900: #1a1f3a;
+  --g-700: #4a4f63;
+  --g-500: #807c87;
+  --g-400: #a09ca7;
+  --g-300: #c5c0b5;
+  --g-200: #e6e3dc;
+  --g-100: #f0ede5;
+
+  /* Performance — desaturated, editorial */
+  --perf-low: #963b3b;
+  --perf-low-bg: #f5e8e8;
+  --perf-mid: #a08544;
+  --perf-mid-bg: #f4ecd9;
+  --perf-high: #3f6b4a;
+  --perf-high-bg: #e3ece5;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--ink); font-family: 'Inter', sans-serif; font-feature-settings: 'tnum', 'kern'; -webkit-font-smoothing: antialiased; line-height: 1.45; }
+.wrap { max-width: 1320px; margin: 0 auto; padding: 0 28px 80px; }
+
+/* RIBBON — refined, no emoji */
+.ribbon { background: var(--ink); color: rgba(255,255,255,0.7); font-size: 11.5px; padding: 10px 0; letter-spacing: 0.3px; }
+.ribbon-inner { max-width: 1320px; margin: 0 auto; padding: 0 28px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.ribbon-strip { display: flex; gap: 28px; flex-wrap: wrap; }
+.ribbon-item { display: flex; gap: 8px; align-items: center; }
+.ribbon-item .lbl { color: rgba(255,255,255,0.45); text-transform: uppercase; font-size: 10px; letter-spacing: 1.2px; }
+.ribbon-item .val { color: var(--gold-soft); font-weight: 500; }
+.ribbon-item .dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
+.dot-up { background: #6da37a; }
+.dot-dn { background: #b67373; }
+
+/* HEADER */
+.header { background: var(--ink); color: white; padding: 26px 0 26px; margin-bottom: 32px; border-bottom: 1px solid rgba(184,153,104,0.4); position: relative; }
+.header-inner { max-width: 1320px; margin: 0 auto; padding: 0 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+.brand-row { display: flex; align-items: center; gap: 20px; }
+.brand-logo-box { width: 64px; height: 64px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.brand-logo-img { max-width: 64px; max-height: 64px; width: auto; height: auto; display: block; object-fit: contain; }
+.brand-logo-svg { width: 56px; height: 60px; }
+.brand-text { display: flex; flex-direction: column; gap: 4px; }
+.brand-mark { font-size: 10px; letter-spacing: 2.5px; color: var(--gold-soft); text-transform: uppercase; font-weight: 500; }
+.brand-title { font-family: 'Lora', serif; font-weight: 500; font-size: 23px; line-height: 1.2; letter-spacing: -0.2px; }
+.brand-sub { font-size: 12.5px; color: rgba(255,255,255,0.6); margin-top: 1px; }
+.meta { text-align: right; }
+.meta-label { font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.4); text-transform: uppercase; font-weight: 500; }
+.meta-date { color: var(--gold-soft); font-weight: 500; font-size: 18px; font-family: 'Lora', serif; margin-top: 4px; }
+.meta-small { font-size: 10.5px; color: rgba(255,255,255,0.4); margin-top: 8px; letter-spacing: 0.3px; }
+
+/* EXECUTIVE PANEL */
+.exec { display: grid; grid-template-columns: 300px 1fr; gap: 1px; margin-bottom: 28px; background: var(--g-200); border: 1px solid var(--g-200); border-radius: 6px; overflow: hidden; }
+.exec-gauge { background: var(--card); padding: 28px 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.gauge-wrap { position: relative; width: 180px; height: 180px; margin-bottom: 16px; }
+.gauge-num { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -52%); text-align: center; }
+.gauge-pct { font-family: 'Lora', serif; font-weight: 500; font-size: 46px; color: var(--ink); line-height: 1; letter-spacing: -1px; }
+.gauge-label { font-size: 10px; letter-spacing: 2.5px; color: var(--g-500); text-transform: uppercase; margin-top: 8px; font-weight: 500; }
+.status-badge { display: inline-block; padding: 5px 14px; font-size: 10.5px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; border-radius: 2px; }
+.status-good { background: var(--perf-high-bg); color: var(--perf-high); }
+.status-ok { background: var(--gold-tint); color: var(--gold); }
+.status-bad { background: var(--perf-low-bg); color: var(--perf-low); }
+.gauge-foot { margin-top: 18px; font-size: 12px; color: var(--g-700); text-align: center; line-height: 1.6; }
+.gauge-foot b { color: var(--ink); font-weight: 600; }
+
+.exec-metrics { background: var(--card); padding: 28px 32px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; align-content: center; }
+.metric { display: flex; flex-direction: column; gap: 6px; padding-left: 16px; border-left: 1px solid var(--g-200); }
+.metric:first-child { border-left: 2px solid var(--gold); padding-left: 14px; }
+.metric-label { font-size: 10px; letter-spacing: 2px; color: var(--g-500); text-transform: uppercase; font-weight: 600; }
+.metric-num { font-family: 'Lora', serif; font-weight: 500; font-size: 30px; line-height: 1; color: var(--ink); letter-spacing: -0.5px; }
+.metric-sub { font-size: 11.5px; color: var(--g-500); margin-top: 2px; }
+
+/* HOT LIST — dignified, not alarming */
+.section { background: var(--card); border: 1px solid var(--g-200); margin-bottom: 24px; border-radius: 6px; overflow: hidden; }
+.section-head { padding: 20px 26px; border-bottom: 1px solid var(--g-200); display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; }
+.section-title { font-family: 'Lora', serif; font-weight: 500; font-size: 18px; color: var(--ink); letter-spacing: -0.2px; }
+.section-sub { font-size: 12px; color: var(--g-500); margin-top: 4px; }
+.section-body { padding: 18px 26px; }
+
+.hotrows { display: grid; gap: 1px; background: var(--g-200); border: 1px solid var(--g-200); margin: 18px 26px 26px; border-radius: 6px; overflow: hidden; }
+.hotrow { display: grid; grid-template-columns: 28px 1.6fr 1fr 110px 70px 150px; gap: 18px; align-items: center; padding: 14px 18px; background: var(--card); }
+.hotrow:hover { background: var(--card-alt); }
+.hot-rank { font-family: 'Lora', serif; font-weight: 500; color: var(--gold); font-size: 18px; }
+.hot-name { font-weight: 600; color: var(--ink); font-size: 14px; }
+.hot-bar-wrap { display: flex; align-items: center; gap: 10px; }
+.hot-bar { flex: 1; height: 8px; background: var(--g-100); border-radius: 4px; overflow: hidden; }
+.hot-bar-fill { height: 100%; background: var(--perf-low); border-radius: 4px; }
+.hot-pending { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); }
+.hot-pending small { display: block; font-size: 10px; color: var(--g-500); font-weight: 400; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.8px; }
+.hot-pct { text-align: right; font-family: 'Lora', serif; font-weight: 500; color: var(--perf-low); font-size: 17px; letter-spacing: -0.3px; }
+
+/* BUTTONS */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 9px 14px; font-size: 11.5px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; border-radius: 4px; font-family: inherit; transition: all 0.15s; letter-spacing: 0.3px; white-space: nowrap; }
+.btn svg { width: 11px; height: 11px; flex-shrink: 0; }
+.btn-primary { background: var(--ink); color: white; }
+.btn-primary:hover { background: var(--ink-2); }
+.btn-gold-outline { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+.btn-gold-outline:hover { background: var(--gold); color: white; }
+.btn-gold { background: var(--gold); color: white; }
+.btn-gold:hover { background: var(--gold-soft); }
+.btn-ghost { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.25); }
+.btn-ghost:hover { border-color: var(--gold-soft); color: var(--gold-soft); }
+
+/* DOWNLOAD CENTER */
+.dl-center { background: var(--ink); color: white; padding: 24px 28px; margin-bottom: 28px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; border-radius: 6px; }
+.dl-center-text { display: flex; flex-direction: column; gap: 4px; }
+.dl-center-title { font-family: 'Lora', serif; font-weight: 500; font-size: 17px; }
+.dl-center-sub { font-size: 12px; color: rgba(255,255,255,0.6); }
+.dl-center-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* MAIN GRID — viloyat + faoliyat side by side */
+.grid-main { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; margin-bottom: 24px; }
+@media (max-width: 980px) {
+  .grid-main { grid-template-columns: 1fr; }
+  .exec { grid-template-columns: 1fr; }
+  .exec-metrics { grid-template-columns: 1fr 1fr; }
+  .hotrow { grid-template-columns: 24px 1fr 80px 110px; }
+  .hotrow .hot-bar-wrap, .hotrow .hot-pending { display: none; }
+}
+
+/* TABLES — refined */
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; padding: 14px 16px 11px; font-size: 9.5px; letter-spacing: 1.5px; color: var(--g-500); font-weight: 700; text-transform: uppercase; border-bottom: 1px solid var(--ink); background: var(--card); }
+th.num { text-align: right; }
+th.act { width: 40px; }
+td { padding: 13px 16px; border-bottom: 1px solid var(--g-100); }
+td.num { text-align: right; font-variant-numeric: tabular-nums; font-weight: 500; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: var(--card-alt); }
+tr.active td { background: var(--gold-tint); }
+.row-name { font-weight: 600; color: var(--ink); }
+
+/* Mini bar in table */
+.bar-cell { width: 110px; }
+.mini-bar { height: 4px; background: var(--g-200); border-radius: 1px; overflow: hidden; }
+.mini-bar-fill { height: 100%; border-radius: 1px; }
+.mini-bar-fill.t1 { background: var(--perf-low); }
+.mini-bar-fill.t2 { background: var(--perf-mid); }
+.mini-bar-fill.t3 { background: var(--perf-high); }
+
+/* PCT — text-only, no bg */
+.pct { font-family: 'Lora', serif; font-weight: 500; font-size: 14px; letter-spacing: -0.2px; }
+.pct.t1 { color: var(--perf-low); }
+.pct.t2 { color: var(--perf-mid); }
+.pct.t3 { color: var(--perf-high); }
+
+/* download tugmasi jadval ichida */
+.dl-mini { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; background: transparent; color: var(--g-500); border: 1px solid var(--g-200); border-radius: 4px; cursor: pointer; transition: all 0.15s; }
+.dl-mini:hover { background: var(--ink); color: white; border-color: var(--ink); }
+.dl-mini svg { width: 11px; height: 11px; }
+
+/* CONTROLS */
+select, input[type=search] { font-family: 'Inter', sans-serif; font-size: 12.5px; padding: 9px 13px; border: 1px solid var(--g-200); background: var(--card); color: var(--ink); border-radius: 4px; }
+select:focus, input[type=search]:focus { outline: none; border-color: var(--gold); }
+select { min-width: 220px; }
+input[type=search] { width: 220px; }
+
+/* TAG */
+.tag { display: inline-block; padding: 4px 10px; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; }
+.tag-gold { background: var(--gold-tint); color: var(--gold); }
+
+
+/* SEGMENT CARDS */
+.seg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }
+.seg-card { background: var(--card); border: 1px solid var(--g-200); border-radius: 6px; padding: 22px 26px; display: flex; flex-direction: column; gap: 14px; }
+.seg-head { display: flex; justify-content: space-between; align-items: baseline; }
+.seg-name { font-family: 'Lora', serif; font-weight: 500; font-size: 17px; color: var(--ink); }
+.seg-pct { font-family: 'Lora', serif; font-weight: 500; font-size: 26px; letter-spacing: -0.5px; }
+.seg-bar { height: 8px; background: var(--g-100); border-radius: 4px; overflow: hidden; }
+.seg-bar-fill { height: 100%; border-radius: 4px; }
+.seg-stats { display: flex; gap: 26px; }
+.seg-stat { display: flex; flex-direction: column; gap: 2px; }
+.seg-stat-num { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 15px; color: var(--ink); }
+.seg-stat-lbl { font-size: 10px; letter-spacing: 1.5px; color: var(--g-500); text-transform: uppercase; font-weight: 600; }
+@media (max-width: 980px) { .seg-grid { grid-template-columns: 1fr; } }
+
+/* GAUGE SVG */
+.gauge-track { fill: none; stroke: var(--g-200); stroke-width: 10; }
+.gauge-fill { fill: none; stroke: var(--gold); stroke-width: 10; stroke-linecap: round; transition: stroke-dashoffset 1.4s ease-out; }
+
+/* FOOTER */
+.footer { text-align: center; font-size: 11px; color: var(--g-500); margin-top: 44px; padding-top: 22px; border-top: 1px solid var(--g-200); letter-spacing: 0.3px; }
+.footer b { color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="ribbon">
+  <div class="ribbon-inner">
+    <div class="ribbon-strip">
+      <div class="ribbon-item"><span class="lbl">Monitoring</span><span class="val">QR registratsiya</span></div>
+      <div class="ribbon-item"><span class="lbl">Sana</span><span class="val" id="rib-date"></span></div>
+    </div>
+    <div class="ribbon-strip">
+      <div class="ribbon-item"><span class="dot dot-up"></span><span class="lbl">Eng yaxshi</span><span class="val" id="rib-top"></span></div>
+      <div class="ribbon-item"><span class="dot dot-dn"></span><span class="lbl">E'tibor</span><span class="val" id="rib-low"></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <div class="brand-logo-box">
+        <img class="brand-logo-img" src="https://api.logobank.uz/media/logos_png/NBU.png" alt="NBU"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+        <svg class="brand-logo-svg" viewBox="0 0 120 130" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+          <rect width="120" height="130" rx="3" fill="#B89968"/>
+          <g fill="#FAF8F2">
+            <path d="M 18 38 Q 18 22 28 22 Q 38 22 38 38 L 38 86 L 18 86 Z"/>
+            <path d="M 46 28 Q 46 8 60 8 Q 74 8 74 28 L 74 86 L 46 86 Z"/>
+            <path d="M 82 38 Q 82 22 92 22 Q 102 22 102 38 L 102 86 L 82 86 Z"/>
+          </g>
+          <rect x="0" y="92" width="120" height="38" fill="#9F8456"/>
+          <text x="60" y="119" font-family="Inter, Arial Black, sans-serif" font-weight="800"
+                font-size="22" fill="#FAF8F2" text-anchor="middle" letter-spacing="3">NBU</text>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <div class="brand-mark">O'zbekiston Milliy Banki · Monitoring</div>
+        <div class="brand-title">QR Registratsiya Kuzatuvi</div>
+        <div class="brand-sub">Tijorat ob'ektlarining QR to'lov terminallariga ulanish dinamikasi</div>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="meta-label">Oxirgi yangilanish</div>
+      <div class="meta-date" id="m-date"></div>
+      <div class="meta-small">Hisobot yaratilgan: <span id="m-gen"></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- EXECUTIVE OVERVIEW -->
+  <div class="exec">
+    <div class="exec-gauge">
+      <div class="gauge-wrap">
+        <svg width="180" height="180" viewBox="0 0 200 200">
+          <circle class="gauge-track" cx="100" cy="100" r="84"/>
+          <circle id="gauge-fill" class="gauge-fill" cx="100" cy="100" r="84"
+                  transform="rotate(-90 100 100)"
+                  stroke-dasharray="528" stroke-dashoffset="528"/>
+        </svg>
+        <div class="gauge-num">
+          <div class="gauge-pct" id="gauge-pct">0%</div>
+          <div class="gauge-label">Bajarish</div>
+        </div>
+      </div>
+      <span class="status-badge" id="status-badge"></span>
+      <div class="gauge-foot">Bazaviy <b id="g-baseline"></b> tadan<br><b id="g-reg"></b> tasi yopildi</div>
+    </div>
+
+    <div class="exec-metrics">
+      <div class="metric">
+        <div class="metric-label">Hali qilmagan</div>
+        <div class="metric-num" id="m-pending"></div>
+        <div class="metric-sub">korxona pending</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Yangi qilgan</div>
+        <div class="metric-num" id="m-new"></div>
+        <div class="metric-sub">QR yopildi</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Tezlik</div>
+        <div class="metric-num" id="m-velo"></div>
+        <div class="metric-sub" id="m-velo-sub">o'rtacha</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Prognoz (ETA)</div>
+        <div class="metric-num" id="m-eta"></div>
+        <div class="metric-sub">100% ga yetish</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOT LIST -->
+  <div class="section">
+    <div class="section-head">
+      <div>
+        <div class="section-title">E'tibor kerak — eng past 5 viloyat</div>
+        <div class="section-sub">Filial rahbariga Excel ro'yxat jo'nating yoki to'g'ridan-to'g'ri qo'ng'iroq qiling</div>
+      </div>
+    </div>
+    <div class="hotrows" id="hot-rows"></div>
+  </div>
+
+
+  <!-- SEGMENT -->
+  <div class="seg-grid" id="seg-grid"></div>
+
+  <!-- DOWNLOAD CENTER -->
+  <div class="dl-center">
+    <div class="dl-center-text">
+      <div class="dl-center-title">Hisobot yuklab olish</div>
+      <div class="dl-center-sub">Pending korxonalar to'liq ro'yxati — viloyat filiallariga jo'natish uchun</div>
+    </div>
+    <div class="dl-center-actions">
+      <button class="btn btn-gold" onclick="downloadPending('ALL')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 12L3 7h3V2h4v5h3l-5 5zm-7 2v-2h14v2H1z"/></svg>
+        Hammasi (<span id="dl-total"></span>)
+      </button>
+      <button class="btn btn-ghost" onclick="downloadTodayReg()">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 12L3 7h3V2h4v5h3l-5 5zm-7 2v-2h14v2H1z"/></svg>
+        Yangi qilganlar
+      </button>
+    </div>
+  </div>
+
+  <!-- MAIN GRID: Viloyat | Faoliyat -->
+  <div class="grid-main">
+    <div class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-title">Viloyatlar reytingi</div>
+          <div class="section-sub">Qatorni bosing — tuman drilldown ochiladi</div>
+        </div>
+        <div><span class="tag tag-gold" id="vil-count"></span></div>
+      </div>
+      <div class="section-body" style="padding:0;">
+        <table id="vil-table">
+          <thead>
+            <tr>
+              <th>Viloyat</th>
+              <th class="num">Target</th>
+              <th class="num">Qilgan</th>
+              <th class="num">Qoldiq</th>
+              <th>Bajarish</th>
+              <th class="num">%</th>
+              <th class="act"></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-title">Faoliyat turi bo'yicha</div>
+          <div class="section-sub">Sohalar reytingi</div>
+        </div>
+      </div>
+      <div class="section-body" style="padding:0;">
+        <table id="fao-table">
+          <thead>
+            <tr>
+              <th>Faoliyat turi</th>
+              <th class="num">Target</th>
+              <th class="num">Qilgan</th>
+              <th>Bajarish</th>
+              <th class="num">%</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHAHAR DRILLDOWN -->
+  <div class="section">
+    <div class="section-head">
+      <div>
+        <div class="section-title">Filial drilldown</div>
+        <div class="section-sub">Viloyat tanlang — ichidagi filiallar bajarish bo'yicha ko'rinadi</div>
+      </div>
+      <div style="display:flex;gap:10px;">
+        <select id="sht-vilfilter"><option value="ALL">Hammasi</option></select>
+        <input type="search" id="sht-search" placeholder="Filial qidirish...">
+      </div>
+    </div>
+    <div class="section-body" style="padding:0;">
+      <table id="sht-table">
+        <thead>
+          <tr>
+            <th>Viloyat</th><th>Filial</th>
+            <th class="num">Target</th><th class="num">Qilgan</th>
+            <th class="num">Qoldiq</th><th>Bajarish</th><th class="num">%</th>
+            <th class="act"></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">
+    <b>NBU Data & AI</b> · Avtomatlashtirilgan kunlik monitoring
+  </div>
+
+</div>
+
+<script>
+const DATA = {"meta": {"latest_date": "03.08.2026", "generated_at": "03.08.2026 12:00", "days_tracked": 1}, "kpi": {"baseline": 35013, "registered": 11639, "pending": 23374, "pct": 33.2, "velocity": "~387 ta/kun (o'rt.)", "eta": "~60 kun", "status_label": "Rejasiga muvofiq", "status_kind": "ok"}, "trend": [{"date": "03.08", "registered": 11639, "pending": 23374}], "segment": [{"Segment": "Yuridik shaxs", "Baseline": 22642, "Qilgan": 9449, "Qoldiq": 13193, "Pct": 41.7}, {"Segment": "Yakka tartibdagi tadbirkor", "Baseline": 12371, "Qilgan": 2190, "Qoldiq": 10181, "Pct": 17.7}], "viloyat": [{"Viloyat": "Tashkent viloyati", "Baseline": 2615, "Qilgan": 1136, "Qoldiq": 1479, "Pct": 43.4}, {"Viloyat": "Samarqand viloyati", "Baseline": 2605, "Qilgan": 1126, "Qoldiq": 1479, "Pct": 43.2}, {"Viloyat": "Qoraqalpog‘iston Rеspublikasi", "Baseline": 1799, "Qilgan": 767, "Qoldiq": 1032, "Pct": 42.6}, {"Viloyat": "Sirdaryo viloyati", "Baseline": 899, "Qilgan": 368, "Qoldiq": 531, "Pct": 40.9}, {"Viloyat": "Navoiy viloyati", "Baseline": 1745, "Qilgan": 697, "Qoldiq": 1048, "Pct": 39.9}, {"Viloyat": "Buxoro viloyati", "Baseline": 3270, "Qilgan": 1167, "Qoldiq": 2103, "Pct": 35.7}, {"Viloyat": "Jizzax viloyati", "Baseline": 1370, "Qilgan": 482, "Qoldiq": 888, "Pct": 35.2}, {"Viloyat": "Qashqadaryo viloyati", "Baseline": 1418, "Qilgan": 468, "Qoldiq": 950, "Pct": 33.0}, {"Viloyat": "Surxondaryo viloyati", "Baseline": 1722, "Qilgan": 559, "Qoldiq": 1163, "Pct": 32.5}, {"Viloyat": "Xorazm viloyati", "Baseline": 2315, "Qilgan": 744, "Qoldiq": 1571, "Pct": 32.1}, {"Viloyat": "Namangan viloyati", "Baseline": 1772, "Qilgan": 514, "Qoldiq": 1258, "Pct": 29.0}, {"Viloyat": "Farg‘ona viloyati", "Baseline": 2268, "Qilgan": 632, "Qoldiq": 1636, "Pct": 27.9}, {"Viloyat": "Toshkеnt shahar", "Baseline": 9242, "Qilgan": 2510, "Qoldiq": 6732, "Pct": 27.2}, {"Viloyat": "Andijon viloyati", "Baseline": 1973, "Qilgan": 469, "Qoldiq": 1504, "Pct": 23.8}], "filial": [{"Viloyat": "Andijon viloyati", "Filial": "Marxamat BXM", "Baseline": 355, "Qilgan": 141, "Qoldiq": 214, "Pct": 39.7}, {"Viloyat": "Andijon viloyati", "Filial": "Asaka BXM", "Baseline": 314, "Qilgan": 78, "Qoldiq": 236, "Pct": 24.8}, {"Viloyat": "Andijon viloyati", "Filial": "Andijon amaliyot BXM", "Baseline": 666, "Qilgan": 164, "Qoldiq": 502, "Pct": 24.6}, {"Viloyat": "Andijon viloyati", "Filial": "Shahrixon BXO", "Baseline": 148, "Qilgan": 27, "Qoldiq": 121, "Pct": 18.2}, {"Viloyat": "Andijon viloyati", "Filial": "Paxtaobod BXO", "Baseline": 151, "Qilgan": 23, "Qoldiq": 128, "Pct": 15.2}, {"Viloyat": "Andijon viloyati", "Filial": "Qo‘rg‘ontepa BXO", "Baseline": 146, "Qilgan": 16, "Qoldiq": 130, "Pct": 11.0}, {"Viloyat": "Andijon viloyati", "Filial": "Izboskan BXM", "Baseline": 193, "Qilgan": 20, "Qoldiq": 173, "Pct": 10.4}, {"Viloyat": "Buxoro viloyati", "Filial": "Qorako‘l BXM", "Baseline": 552, "Qilgan": 239, "Qoldiq": 313, "Pct": 43.3}, {"Viloyat": "Buxoro viloyati", "Filial": "G‘ijduvon BXM", "Baseline": 695, "Qilgan": 261, "Qoldiq": 434, "Pct": 37.6}, {"Viloyat": "Buxoro viloyati", "Filial": "Shofirkon BXO", "Baseline": 137, "Qilgan": 49, "Qoldiq": 88, "Pct": 35.8}, {"Viloyat": "Buxoro viloyati", "Filial": "Buxoro amaliyot BXM", "Baseline": 949, "Qilgan": 338, "Qoldiq": 611, "Pct": 35.6}, {"Viloyat": "Buxoro viloyati", "Filial": "Vobkent BXO", "Baseline": 269, "Qilgan": 82, "Qoldiq": 187, "Pct": 30.5}, {"Viloyat": "Buxoro viloyati", "Filial": "Kogon BXM", "Baseline": 384, "Qilgan": 116, "Qoldiq": 268, "Pct": 30.2}, {"Viloyat": "Buxoro viloyati", "Filial": "Romitan BXM", "Baseline": 244, "Qilgan": 71, "Qoldiq": 173, "Pct": 29.1}, {"Viloyat": "Buxoro viloyati", "Filial": "Qorovulbozor BXO", "Baseline": 40, "Qilgan": 11, "Qoldiq": 29, "Pct": 27.5}, {"Viloyat": "Farg‘ona viloyati", "Filial": "Beshariq BXM", "Baseline": 269, "Qilgan": 87, "Qoldiq": 182, "Pct": 32.3}, {"Viloyat": "Farg‘ona viloyati", "Filial": "Rishton BXM", "Baseline": 365, "Qilgan": 113, "Qoldiq": 252, "Pct": 31.0}, {"Viloyat": "Farg‘ona viloyati", "Filial": "Marg‘ilon BXO", "Baseline": 122, "Qilgan": 36, "Qoldiq": 86, "Pct": 29.5}, {"Viloyat": "Farg‘ona viloyati", "Filial": "Quvasoy BXO", "Baseline": 49, "Qilgan": 14, "Qoldiq": 35, "Pct": 28.6}, {"Viloyat": "Farg‘ona viloyati", "Filial": "Farg‘ona amaliyot BXM", "Baseline": 682, "Qilgan": 189, "Qoldiq": 493, "Pct": 27.7}, {"Viloyat": "Farg‘ona viloyati", "Filial": "Buvayda BXO", "Baseline": 80, "Qilgan": 22, "Qoldiq": 58, "Pct": 27.5}, {"Viloyat": "Farg‘ona viloyati", "Filial": "Oltiariq BXO", "Baseline": 11, "Qilgan": 3, "Qoldiq": 8, "Pct": 27.3}, {"Viloyat": "Farg‘ona viloyati", "Filial": "Quva BXM", "Baseline": 383, "Qilgan": 102, "Qoldiq": 281, "Pct": 26.6}, {"Viloyat": "Farg‘ona viloyati", "Filial": "Qo‘qon BXM", "Baseline": 307, "Qilgan": 66, "Qoldiq": 241, "Pct": 21.5}, {"Viloyat": "Jizzax viloyati", "Filial": "Mirzacho‘l BXM", "Baseline": 184, "Qilgan": 93, "Qoldiq": 91, "Pct": 50.5}, {"Viloyat": "Jizzax viloyati", "Filial": "Industrial BXM", "Baseline": 138, "Qilgan": 59, "Qoldiq": 79, "Pct": 42.8}, {"Viloyat": "Jizzax viloyati", "Filial": "Paxtakor BXO", "Baseline": 112, "Qilgan": 44, "Qoldiq": 68, "Pct": 39.3}, {"Viloyat": "Jizzax viloyati", "Filial": "Jizzax amaliyot BXM", "Baseline": 936, "Qilgan": 286, "Qoldiq": 650, "Pct": 30.6}, {"Viloyat": "Namangan viloyati", "Filial": "Namangan amaliyot BXM", "Baseline": 540, "Qilgan": 194, "Qoldiq": 346, "Pct": 35.9}, {"Viloyat": "Namangan viloyati", "Filial": "To‘raqo‘rg‘on BXO", "Baseline": 99, "Qilgan": 31, "Qoldiq": 68, "Pct": 31.3}, {"Viloyat": "Namangan viloyati", "Filial": "Kosonsoy BXO", "Baseline": 123, "Qilgan": 36, "Qoldiq": 87, "Pct": 29.3}, {"Viloyat": "Namangan viloyati", "Filial": "Uchqo‘rg‘on BXM", "Baseline": 164, "Qilgan": 46, "Qoldiq": 118, "Pct": 28.0}, {"Viloyat": "Namangan viloyati", "Filial": "Chust BXO", "Baseline": 126, "Qilgan": 35, "Qoldiq": 91, "Pct": 27.8}, {"Viloyat": "Namangan viloyati", "Filial": "Uychi BXM", "Baseline": 401, "Qilgan": 107, "Qoldiq": 294, "Pct": 26.7}, {"Viloyat": "Namangan viloyati", "Filial": "Chortoq BXM", "Baseline": 319, "Qilgan": 65, "Qoldiq": 254, "Pct": 20.4}, {"Viloyat": "Navoiy viloyati", "Filial": "Uchquduq BXM", "Baseline": 307, "Qilgan": 149, "Qoldiq": 158, "Pct": 48.5}, {"Viloyat": "Navoiy viloyati", "Filial": "Malikrabot BXM", "Baseline": 136, "Qilgan": 65, "Qoldiq": 71, "Pct": 47.8}, {"Viloyat": "Navoiy viloyati", "Filial": "Navoiy amaliyot BXM", "Baseline": 586, "Qilgan": 245, "Qoldiq": 341, "Pct": 41.8}, {"Viloyat": "Navoiy viloyati", "Filial": "Nurota BXO", "Baseline": 70, "Qilgan": 25, "Qoldiq": 45, "Pct": 35.7}, {"Viloyat": "Navoiy viloyati", "Filial": "Zarafshon BXM", "Baseline": 356, "Qilgan": 121, "Qoldiq": 235, "Pct": 34.0}, {"Viloyat": "Navoiy viloyati", "Filial": "Qiziltepa BXM", "Baseline": 290, "Qilgan": 92, "Qoldiq": 198, "Pct": 31.7}, {"Viloyat": "Qashqadaryo viloyati", "Filial": "Shahrisabz BXM", "Baseline": 286, "Qilgan": 135, "Qoldiq": 151, "Pct": 47.2}, {"Viloyat": "Qashqadaryo viloyati", "Filial": "Yangi-nishon BXO", "Baseline": 176, "Qilgan": 65, "Qoldiq": 111, "Pct": 36.9}, {"Viloyat": "Qashqadaryo viloyati", "Filial": "G‘uzor BXO", "Baseline": 218, "Qilgan": 74, "Qoldiq": 144, "Pct": 33.9}, {"Viloyat": "Qashqadaryo viloyati", "Filial": "Qarshi amaliyot BXM", "Baseline": 642, "Qilgan": 184, "Qoldiq": 458, "Pct": 28.7}, {"Viloyat": "Qashqadaryo viloyati", "Filial": "Nasaf BXO", "Baseline": 6, "Qilgan": 1, "Qoldiq": 5, "Pct": 16.7}, {"Viloyat": "Qashqadaryo viloyati", "Filial": "Muborak BXO", "Baseline": 90, "Qilgan": 9, "Qoldiq": 81, "Pct": 10.0}, {"Viloyat": "Qoraqalpog‘iston Rеspublikasi", "Filial": "Chimboy BXO", "Baseline": 77, "Qilgan": 52, "Qoldiq": 25, "Pct": 67.5}, {"Viloyat": "Qoraqalpog‘iston Rеspublikasi", "Filial": "Nurli yo‘l BXO", "Baseline": 3, "Qilgan": 2, "Qoldiq": 1, "Pct": 66.7}, {"Viloyat": "Qoraqalpog‘iston Rеspublikasi", "Filial": "Qo‘ng‘irot BXM", "Baseline": 173, "Qilgan": 92, "Qoldiq": 81, "Pct": 53.2}, {"Viloyat": "Qoraqalpog‘iston Rеspublikasi", "Filial": "Xo‘jayli BXO", "Baseline": 105, "Qilgan": 52, "Qoldiq": 53, "Pct": 49.5}, {"Viloyat": "Qoraqalpog‘iston Rеspublikasi", "Filial": "To‘rtko‘l BXM", "Baseline": 573, "Qilgan": 270, "Qoldiq": 303, "Pct": 47.1}, {"Viloyat": "Qoraqalpog‘iston Rеspublikasi", "Filial": "Mang‘it BXO", "Baseline": 125, "Qilgan": 50, "Qoldiq": 75, "Pct": 40.0}, {"Viloyat": "Qoraqalpog‘iston Rеspublikasi", "Filial": "Nukus amaliyot BXM", "Baseline": 743, "Qilgan": 249, "Qoldiq": 494, "Pct": 33.5}, {"Viloyat": "Samarqand viloyati", "Filial": "Do‘stlik BXO", "Baseline": 2, "Qilgan": 2, "Qoldiq": 0, "Pct": 100.0}, {"Viloyat": "Samarqand viloyati", "Filial": "Tadbirkor BXO", "Baseline": 10, "Qilgan": 8, "Qoldiq": 2, "Pct": 80.0}, {"Viloyat": "Samarqand viloyati", "Filial": "Bulung‘ur BXO", "Baseline": 103, "Qilgan": 57, "Qoldiq": 46, "Pct": 55.3}, {"Viloyat": "Samarqand viloyati", "Filial": "Registon BXM", "Baseline": 309, "Qilgan": 157, "Qoldiq": 152, "Pct": 50.8}, {"Viloyat": "Samarqand viloyati", "Filial": "Jomboy BXM", "Baseline": 256, "Qilgan": 128, "Qoldiq": 128, "Pct": 50.0}, {"Viloyat": "Samarqand viloyati", "Filial": "Payariq BXO", "Baseline": 4, "Qilgan": 2, "Qoldiq": 2, "Pct": 50.0}, {"Viloyat": "Samarqand viloyati", "Filial": "Kattaqo‘rg‘on BXO", "Baseline": 132, "Qilgan": 62, "Qoldiq": 70, "Pct": 47.0}, {"Viloyat": "Samarqand viloyati", "Filial": "Samarqand amaliyot BXM", "Baseline": 804, "Qilgan": 337, "Qoldiq": 467, "Pct": 41.9}, {"Viloyat": "Samarqand viloyati", "Filial": "Urgut BXM", "Baseline": 508, "Qilgan": 210, "Qoldiq": 298, "Pct": 41.3}, {"Viloyat": "Samarqand viloyati", "Filial": "Pastdarg‘om BXM", "Baseline": 253, "Qilgan": 96, "Qoldiq": 157, "Pct": 37.9}, {"Viloyat": "Samarqand viloyati", "Filial": "Nurobod BXO", "Baseline": 158, "Qilgan": 53, "Qoldiq": 105, "Pct": 33.5}, {"Viloyat": "Samarqand viloyati", "Filial": "Qorasuv BXO", "Baseline": 29, "Qilgan": 7, "Qoldiq": 22, "Pct": 24.1}, {"Viloyat": "Samarqand viloyati", "Filial": "Tayloq BXO", "Baseline": 13, "Qilgan": 3, "Qoldiq": 10, "Pct": 23.1}, {"Viloyat": "Samarqand viloyati", "Filial": "Zarmitan BXO", "Baseline": 24, "Qilgan": 4, "Qoldiq": 20, "Pct": 16.7}, {"Viloyat": "Sirdaryo viloyati", "Filial": "Oqoltin BXO", "Baseline": 76, "Qilgan": 54, "Qoldiq": 22, "Pct": 71.1}, {"Viloyat": "Sirdaryo viloyati", "Filial": "Guliston amaliyot BXM", "Baseline": 823, "Qilgan": 314, "Qoldiq": 509, "Pct": 38.2}, {"Viloyat": "Surxondaryo viloyati", "Filial": "Denov BXM", "Baseline": 779, "Qilgan": 281, "Qoldiq": 498, "Pct": 36.1}, {"Viloyat": "Surxondaryo viloyati", "Filial": "Sherobod BXO", "Baseline": 101, "Qilgan": 34, "Qoldiq": 67, "Pct": 33.7}, {"Viloyat": "Surxondaryo viloyati", "Filial": "Termiz amaliyot BXM", "Baseline": 546, "Qilgan": 161, "Qoldiq": 385, "Pct": 29.5}, {"Viloyat": "Surxondaryo viloyati", "Filial": "Qumqo‘rg‘on BXM", "Baseline": 290, "Qilgan": 82, "Qoldiq": 208, "Pct": 28.3}, {"Viloyat": "Surxondaryo viloyati", "Filial": "Jarqo‘rg‘on BXO", "Baseline": 5, "Qilgan": 1, "Qoldiq": 4, "Pct": 20.0}, {"Viloyat": "Surxondaryo viloyati", "Filial": "Ayritom BXO", "Baseline": 1, "Qilgan": 0, "Qoldiq": 1, "Pct": 0.0}, {"Viloyat": "Tashkent viloyati", "Filial": "Angren BXM", "Baseline": 321, "Qilgan": 177, "Qoldiq": 144, "Pct": 55.1}, {"Viloyat": "Tashkent viloyati", "Filial": "Chirchiq BXO", "Baseline": 179, "Qilgan": 86, "Qoldiq": 93, "Pct": 48.0}, {"Viloyat": "Tashkent viloyati", "Filial": "Nurafshon amaliyot BXM", "Baseline": 523, "Qilgan": 241, "Qoldiq": 282, "Pct": 46.1}, {"Viloyat": "Tashkent viloyati", "Filial": "Olmaliq BXO", "Baseline": 200, "Qilgan": 91, "Qoldiq": 109, "Pct": 45.5}, {"Viloyat": "Tashkent viloyati", "Filial": "Yangiyo‘l BXM", "Baseline": 429, "Qilgan": 185, "Qoldiq": 244, "Pct": 43.1}, {"Viloyat": "Tashkent viloyati", "Filial": "G‘azalkent BXO", "Baseline": 175, "Qilgan": 74, "Qoldiq": 101, "Pct": 42.3}, {"Viloyat": "Tashkent viloyati", "Filial": "Bekobod BXM", "Baseline": 662, "Qilgan": 263, "Qoldiq": 399, "Pct": 39.7}, {"Viloyat": "Tashkent viloyati", "Filial": "Toshkent shahar BXO", "Baseline": 126, "Qilgan": 19, "Qoldiq": 107, "Pct": 15.1}, {"Viloyat": "Toshkеnt shahar", "Filial": "Zangiota BXO", "Baseline": 11, "Qilgan": 7, "Qoldiq": 4, "Pct": 63.6}, {"Viloyat": "Toshkеnt shahar", "Filial": "Yangi Sergeli BXO", "Baseline": 2, "Qilgan": 1, "Qoldiq": 1, "Pct": 50.0}, {"Viloyat": "Toshkеnt shahar", "Filial": "Shayhontoxur BXO", "Baseline": 230, "Qilgan": 85, "Qoldiq": 145, "Pct": 37.0}, {"Viloyat": "Toshkеnt shahar", "Filial": "Uchtepa BXM", "Baseline": 631, "Qilgan": 233, "Qoldiq": 398, "Pct": 36.9}, {"Viloyat": "Toshkеnt shahar", "Filial": "Humo BXO", "Baseline": 23, "Qilgan": 8, "Qoldiq": 15, "Pct": 34.8}, {"Viloyat": "Toshkеnt shahar", "Filial": "G‘alaba BXO", "Baseline": 6, "Qilgan": 2, "Qoldiq": 4, "Pct": 33.3}, {"Viloyat": "Toshkеnt shahar", "Filial": "Mirobod plaza BXO", "Baseline": 28, "Qilgan": 9, "Qoldiq": 19, "Pct": 32.1}, {"Viloyat": "Toshkеnt shahar", "Filial": "Olmazor BXM", "Baseline": 706, "Qilgan": 224, "Qoldiq": 482, "Pct": 31.7}, {"Viloyat": "Toshkеnt shahar", "Filial": "Sergeli BXM", "Baseline": 711, "Qilgan": 224, "Qoldiq": 487, "Pct": 31.5}, {"Viloyat": "Toshkеnt shahar", "Filial": "City BXO", "Baseline": 10, "Qilgan": 3, "Qoldiq": 7, "Pct": 30.0}, {"Viloyat": "Toshkеnt shahar", "Filial": "Yunusobod BXM", "Baseline": 673, "Qilgan": 201, "Qoldiq": 472, "Pct": 29.9}, {"Viloyat": "Toshkеnt shahar", "Filial": "Sayohat BXM", "Baseline": 648, "Qilgan": 177, "Qoldiq": 471, "Pct": 27.3}, {"Viloyat": "Toshkеnt shahar", "Filial": "Bektemir BXM", "Baseline": 731, "Qilgan": 199, "Qoldiq": 532, "Pct": 27.2}, {"Viloyat": "Toshkеnt shahar", "Filial": "Yashnobod BXM", "Baseline": 468, "Qilgan": 123, "Qoldiq": 345, "Pct": 26.3}, {"Viloyat": "Toshkеnt shahar", "Filial": "Yangiobod BXM", "Baseline": 335, "Qilgan": 87, "Qoldiq": 248, "Pct": 26.0}, {"Viloyat": "Toshkеnt shahar", "Filial": "Akademiya BXM", "Baseline": 517, "Qilgan": 132, "Qoldiq": 385, "Pct": 25.5}, {"Viloyat": "Toshkеnt shahar", "Filial": "Mirzo Ulug‘bek BXM", "Baseline": 501, "Qilgan": 124, "Qoldiq": 377, "Pct": 24.8}, {"Viloyat": "Toshkеnt shahar", "Filial": "Sebzor amaliyot BXM", "Baseline": 1027, "Qilgan": 253, "Qoldiq": 774, "Pct": 24.6}, {"Viloyat": "Toshkеnt shahar", "Filial": "Markaziy amaliyot BXM", "Baseline": 440, "Qilgan": 107, "Qoldiq": 333, "Pct": 24.3}, {"Viloyat": "Toshkеnt shahar", "Filial": "Bosh amaliyot BXM", "Baseline": 710, "Qilgan": 160, "Qoldiq": 550, "Pct": 22.5}, {"Viloyat": "Toshkеnt shahar", "Filial": "Atlas NBU BXO", "Baseline": 41, "Qilgan": 8, "Qoldiq": 33, "Pct": 19.5}, {"Viloyat": "Toshkеnt shahar", "Filial": "Yakkasaroy BXM", "Baseline": 681, "Qilgan": 124, "Qoldiq": 557, "Pct": 18.2}, {"Viloyat": "Toshkеnt shahar", "Filial": "Abu Saxiy BXO", "Baseline": 110, "Qilgan": 19, "Qoldiq": 91, "Pct": 17.3}, {"Viloyat": "Toshkеnt shahar", "Filial": "Metallurg BXO", "Baseline": 1, "Qilgan": 0, "Qoldiq": 1, "Pct": 0.0}, {"Viloyat": "Toshkеnt shahar", "Filial": "Texnopark BXO", "Baseline": 1, "Qilgan": 0, "Qoldiq": 1, "Pct": 0.0}, {"Viloyat": "Xorazm viloyati", "Filial": "Hazorasp BXM", "Baseline": 281, "Qilgan": 126, "Qoldiq": 155, "Pct": 44.8}, {"Viloyat": "Xorazm viloyati", "Filial": "Gurlan BXO", "Baseline": 248, "Qilgan": 101, "Qoldiq": 147, "Pct": 40.7}, {"Viloyat": "Xorazm viloyati", "Filial": "Xiva BXO", "Baseline": 242, "Qilgan": 92, "Qoldiq": 150, "Pct": 38.0}, {"Viloyat": "Xorazm viloyati", "Filial": "Karvon BXO", "Baseline": 3, "Qilgan": 1, "Qoldiq": 2, "Pct": 33.3}, {"Viloyat": "Xorazm viloyati", "Filial": "Xorazm amaliyot BXM", "Baseline": 750, "Qilgan": 249, "Qoldiq": 501, "Pct": 33.2}, {"Viloyat": "Xorazm viloyati", "Filial": "Yangiariq BXO", "Baseline": 204, "Qilgan": 54, "Qoldiq": 150, "Pct": 26.5}, {"Viloyat": "Xorazm viloyati", "Filial": "Xonqa BXM", "Baseline": 212, "Qilgan": 52, "Qoldiq": 160, "Pct": 24.5}, {"Viloyat": "Xorazm viloyati", "Filial": "Shovot BXM", "Baseline": 374, "Qilgan": 69, "Qoldiq": 305, "Pct": 18.4}, {"Viloyat": "Xorazm viloyati", "Filial": "Qo‘shko‘pir BXO", "Baseline": 1, "Qilgan": 0, "Qoldiq": 1, "Pct": 0.0}], "faoliyat": [{"Faoliyat": "ТОРГОВЛЯ", "Baseline": 18022, "Qilgan": 6783, "Qoldiq": 11239, "Pct": 37.6}, {"Faoliyat": "УСЛУГИ", "Baseline": 13926, "Qilgan": 4382, "Qoldiq": 9544, "Pct": 31.5}, {"Faoliyat": "ТРАНСПОРТ", "Baseline": 1233, "Qilgan": 243, "Qoldiq": 990, "Pct": 19.7}, {"Faoliyat": "ПРОИЗВОДСТВО", "Baseline": 689, "Qilgan": 107, "Qoldiq": 582, "Pct": 15.5}, {"Faoliyat": "Водоснабжение, организация сбора и утилизации отходов", "Baseline": 103, "Qilgan": 15, "Qoldiq": 88, "Pct": 14.6}, {"Faoliyat": "Сельское хозяйство", "Baseline": 374, "Qilgan": 54, "Qoldiq": 320, "Pct": 14.4}, {"Faoliyat": "Noma'lum", "Baseline": 574, "Qilgan": 48, "Qoldiq": 526, "Pct": 8.4}, {"Faoliyat": "СТРОИТЕЛЬСТВО", "Baseline": 91, "Qilgan": 7, "Qoldiq": 84, "Pct": 7.7}, {"Faoliyat": "Добыча полезных ископаемых", "Baseline": 1, "Qilgan": 0, "Qoldiq": 1, "Pct": 0.0}], "seg_vil": [{"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Tashkent viloyati", "Baseline": 1102, "Qilgan": 376, "Qoldiq": 726, "Pct": 34.1}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Sirdaryo viloyati", "Baseline": 372, "Qilgan": 123, "Qoldiq": 249, "Pct": 33.1}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Qoraqalpog‘iston Rеspublikasi", "Baseline": 681, "Qilgan": 176, "Qoldiq": 505, "Pct": 25.8}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Jizzax viloyati", "Baseline": 483, "Qilgan": 115, "Qoldiq": 368, "Pct": 23.8}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Qashqadaryo viloyati", "Baseline": 513, "Qilgan": 106, "Qoldiq": 407, "Pct": 20.7}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Samarqand viloyati", "Baseline": 688, "Qilgan": 133, "Qoldiq": 555, "Pct": 19.3}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Toshkеnt shahar", "Baseline": 2749, "Qilgan": 515, "Qoldiq": 2234, "Pct": 18.7}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Buxoro viloyati", "Baseline": 1457, "Qilgan": 267, "Qoldiq": 1190, "Pct": 18.3}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Andijon viloyati", "Baseline": 857, "Qilgan": 102, "Qoldiq": 755, "Pct": 11.9}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Navoiy viloyati", "Baseline": 589, "Qilgan": 57, "Qoldiq": 532, "Pct": 9.7}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Xorazm viloyati", "Baseline": 809, "Qilgan": 66, "Qoldiq": 743, "Pct": 8.2}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Farg‘ona viloyati", "Baseline": 879, "Qilgan": 66, "Qoldiq": 813, "Pct": 7.5}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Namangan viloyati", "Baseline": 687, "Qilgan": 51, "Qoldiq": 636, "Pct": 7.4}, {"Segment": "Yakka tartibdagi tadbirkor", "Viloyat": "Surxondaryo viloyati", "Baseline": 505, "Qilgan": 37, "Qoldiq": 468, "Pct": 7.3}, {"Segment": "Yuridik shaxs", "Viloyat": "Navoiy viloyati", "Baseline": 1156, "Qilgan": 640, "Qoldiq": 516, "Pct": 55.4}, {"Segment": "Yuridik shaxs", "Viloyat": "Qoraqalpog‘iston Rеspublikasi", "Baseline": 1118, "Qilgan": 591, "Qoldiq": 527, "Pct": 52.9}, {"Segment": "Yuridik shaxs", "Viloyat": "Samarqand viloyati", "Baseline": 1917, "Qilgan": 993, "Qoldiq": 924, "Pct": 51.8}, {"Segment": "Yuridik shaxs", "Viloyat": "Tashkent viloyati", "Baseline": 1513, "Qilgan": 760, "Qoldiq": 753, "Pct": 50.2}, {"Segment": "Yuridik shaxs", "Viloyat": "Buxoro viloyati", "Baseline": 1813, "Qilgan": 900, "Qoldiq": 913, "Pct": 49.6}, {"Segment": "Yuridik shaxs", "Viloyat": "Sirdaryo viloyati", "Baseline": 527, "Qilgan": 245, "Qoldiq": 282, "Pct": 46.5}, {"Segment": "Yuridik shaxs", "Viloyat": "Xorazm viloyati", "Baseline": 1506, "Qilgan": 678, "Qoldiq": 828, "Pct": 45.0}, {"Segment": "Yuridik shaxs", "Viloyat": "Surxondaryo viloyati", "Baseline": 1217, "Qilgan": 522, "Qoldiq": 695, "Pct": 42.9}, {"Segment": "Yuridik shaxs", "Viloyat": "Namangan viloyati", "Baseline": 1085, "Qilgan": 463, "Qoldiq": 622, "Pct": 42.7}, {"Segment": "Yuridik shaxs", "Viloyat": "Jizzax viloyati", "Baseline": 887, "Qilgan": 367, "Qoldiq": 520, "Pct": 41.4}, {"Segment": "Yuridik shaxs", "Viloyat": "Farg‘ona viloyati", "Baseline": 1389, "Qilgan": 566, "Qoldiq": 823, "Pct": 40.7}, {"Segment": "Yuridik shaxs", "Viloyat": "Qashqadaryo viloyati", "Baseline": 905, "Qilgan": 362, "Qoldiq": 543, "Pct": 40.0}, {"Segment": "Yuridik shaxs", "Viloyat": "Andijon viloyati", "Baseline": 1116, "Qilgan": 367, "Qoldiq": 749, "Pct": 32.9}, {"Segment": "Yuridik shaxs", "Viloyat": "Toshkеnt shahar", "Baseline": 6493, "Qilgan": 1995, "Qoldiq": 4498, "Pct": 30.7}], "viloyat_files": {"Tashkent viloyati": "tashkent_viloyati__2026_08_03.xlsx", "Samarqand viloyati": "samarqand_viloyati__2026_08_03.xlsx", "Qoraqalpog‘iston Rеspublikasi": "qoraqalpogiston_respublikasi__2026_08_03.xlsx", "Sirdaryo viloyati": "sirdaryo_viloyati__2026_08_03.xlsx", "Navoiy viloyati": "navoiy_viloyati__2026_08_03.xlsx", "Buxoro viloyati": "buxoro_viloyati__2026_08_03.xlsx", "Jizzax viloyati": "jizzax_viloyati__2026_08_03.xlsx", "Qashqadaryo viloyati": "qashqadaryo_viloyati__2026_08_03.xlsx", "Surxondaryo viloyati": "surxondaryo_viloyati__2026_08_03.xlsx", "Xorazm viloyati": "xorazm_viloyati__2026_08_03.xlsx", "Namangan viloyati": "namangan_viloyati__2026_08_03.xlsx", "Farg‘ona viloyati": "fargona_viloyati__2026_08_03.xlsx", "Toshkеnt shahar": "toshkent_shahar__2026_08_03.xlsx", "Andijon viloyati": "andijon_viloyati__2026_08_03.xlsx"}};
+const fmt = n => n.toLocaleString('ru-RU').replace(/,/g, ' ');
+const tier = pct => pct < 20 ? 't1' : pct < 40 ? 't2' : 't3';
+const dlIcon = '<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 12L3 7h3V2h4v5h3l-5 5zm-7 2v-2h14v2H1z"/></svg>';
+
+// HEADER + RIBBON
+document.getElementById('m-date').textContent = DATA.meta.latest_date;
+document.getElementById('m-gen').textContent = DATA.meta.generated_at;
+document.getElementById('rib-date').textContent = DATA.meta.latest_date;
+const sortedVil = [...DATA.viloyat].sort((a,b) => b.Pct - a.Pct);
+document.getElementById('rib-top').textContent = sortedVil[0].Viloyat + ' · ' + sortedVil[0].Pct + '%';
+document.getElementById('rib-low').textContent = sortedVil[sortedVil.length-1].Viloyat + ' · ' + sortedVil[sortedVil.length-1].Pct + '%';
+
+// GAUGE
+document.getElementById('gauge-pct').textContent = DATA.kpi.pct + '%';
+document.getElementById('g-baseline').textContent = fmt(DATA.kpi.baseline);
+document.getElementById('g-reg').textContent = fmt(DATA.kpi.registered);
+const sb = document.getElementById('status-badge');
+sb.textContent = DATA.kpi.status_label;
+sb.classList.add('status-' + DATA.kpi.status_kind);
+const r = 84;
+const C = 2 * Math.PI * r;
+const offset = C - (DATA.kpi.pct / 100) * C;
+const fillEl = document.getElementById('gauge-fill');
+fillEl.setAttribute('stroke-dasharray', C);
+fillEl.setAttribute('stroke-dashoffset', C);
+setTimeout(() => { fillEl.style.strokeDashoffset = offset; }, 250);
+
+// METRICS
+document.getElementById('m-pending').textContent = fmt(DATA.kpi.pending);
+document.getElementById('m-new').textContent = fmt(DATA.kpi.registered);
+const veloNum = (DATA.kpi.velocity.match(/\d+/) || ['—'])[0];
+document.getElementById('m-velo').textContent = veloNum;
+document.getElementById('m-velo-sub').textContent = "ta/kun · o'rtacha";
+document.getElementById('m-eta').textContent = DATA.kpi.eta;
+document.getElementById('dl-total').textContent = fmt(DATA.kpi.pending) + ' ta';
+
+
+// SEGMENT CARDS
+const segRoot = document.getElementById('seg-grid');
+(DATA.segment || []).forEach(s => {
+  const t = tier(s.Pct);
+  const colorVar = t === 't1' ? 'var(--perf-low)' : t === 't2' ? 'var(--perf-mid)' : 'var(--perf-high)';
+  const card = document.createElement('div');
+  card.className = 'seg-card';
+  card.innerHTML = `
+    <div class="seg-head">
+      <div class="seg-name">${s.Segment}</div>
+      <div class="seg-pct" style="color:${colorVar}">${s.Pct}%</div>
+    </div>
+    <div class="seg-bar"><div class="seg-bar-fill" style="width:${Math.max(s.Pct,1)}%;background:${colorVar}"></div></div>
+    <div class="seg-stats">
+      <div class="seg-stat"><div class="seg-stat-num">${fmt(s.Baseline)}</div><div class="seg-stat-lbl">Bazaviy</div></div>
+      <div class="seg-stat"><div class="seg-stat-num">${fmt(s.Qilgan)}</div><div class="seg-stat-lbl">Qilgan</div></div>
+      <div class="seg-stat"><div class="seg-stat-num">${fmt(s.Qoldiq)}</div><div class="seg-stat-lbl">Qoldiq</div></div>
+    </div>
+  `;
+  segRoot.appendChild(card);
+});
+
+// HOT LIST
+const hotRoot = document.getElementById('hot-rows');
+sortedVil.slice(-5).reverse().forEach((r, i) => {
+  const row = document.createElement('div');
+  row.className = 'hotrow';
+  row.innerHTML = `
+    <div class="hot-rank">${i+1}</div>
+    <div class="hot-name">${r.Viloyat}</div>
+    <div class="hot-bar-wrap">
+      <div class="hot-bar"><div class="hot-bar-fill" style="width:${Math.max(r.Pct, 2)}%"></div></div>
+    </div>
+    <div class="hot-pending">${fmt(r.Qoldiq)}<small>Qoldiq</small></div>
+    <div class="hot-pct">${r.Pct}%</div>
+    <button class="btn btn-gold-outline" onclick="downloadViloyatXlsx('${r.Viloyat.replace(/'/g, "\\'")}')">${dlIcon} Excel</button>
+  `;
+  hotRoot.appendChild(row);
+});
+
+// VILOYAT TABLE
+const vilBody = document.querySelector('#vil-table tbody');
+DATA.viloyat.forEach(r => {
+  const tr = document.createElement('tr');
+  tr.dataset.viloyat = r.Viloyat;
+  tr.innerHTML = `
+    <td class="row-name">${r.Viloyat}</td>
+    <td class="num">${fmt(r.Baseline)}</td>
+    <td class="num">${fmt(r.Qilgan)}</td>
+    <td class="num">${fmt(r.Qoldiq)}</td>
+    <td class="bar-cell"><div class="mini-bar"><div class="mini-bar-fill ${tier(r.Pct)}" style="width:${r.Pct}%"></div></div></td>
+    <td class="num"><span class="pct ${tier(r.Pct)}">${r.Pct}%</span></td>
+    <td><button class="dl-mini" title="${r.Viloyat} Excel" onclick="event.stopPropagation(); downloadViloyatXlsx('${r.Viloyat.replace(/'/g, "\\'")}')">${dlIcon}</button></td>
+  `;
+  tr.addEventListener('click', () => {
+    document.getElementById('sht-vilfilter').value = r.Viloyat;
+    renderFilial();
+    document.querySelectorAll('#vil-table tr').forEach(x => x.classList.remove('active'));
+    tr.classList.add('active');
+    document.getElementById('sht-table').scrollIntoView({behavior:'smooth', block:'start'});
+  });
+  vilBody.appendChild(tr);
+});
+document.getElementById('vil-count').textContent = `${DATA.viloyat.length} viloyat`;
+
+// FAOLIYAT TABLE
+const faoBody = document.querySelector('#fao-table tbody');
+DATA.faoliyat.forEach(r => {
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td class="row-name">${r.Faoliyat}</td>
+    <td class="num">${fmt(r.Baseline)}</td>
+    <td class="num">${fmt(r.Qilgan)}</td>
+    <td class="bar-cell"><div class="mini-bar"><div class="mini-bar-fill ${tier(r.Pct)}" style="width:${r.Pct}%"></div></div></td>
+    <td class="num"><span class="pct ${tier(r.Pct)}">${r.Pct}%</span></td>
+  `;
+  faoBody.appendChild(tr);
+});
+
+// VILOYAT FILTER
+const vilSelect = document.getElementById('sht-vilfilter');
+DATA.viloyat.map(r => r.Viloyat).sort().forEach(v => {
+  const o = document.createElement('option'); o.value = v; o.textContent = v; vilSelect.appendChild(o);
+});
+
+// SHAHAR TABLE
+function renderFilial() {
+  const filter = document.getElementById('sht-vilfilter').value;
+  const search = document.getElementById('sht-search').value.toLowerCase();
+  const tbody = document.querySelector('#sht-table tbody');
+  tbody.innerHTML = '';
+  DATA.filial
+    .filter(r => filter === 'ALL' || r.Viloyat === filter)
+    .filter(r => !search || (r.Filial||'').toLowerCase().includes(search))
+    .forEach(r => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${r.Viloyat}</td>
+        <td class="row-name">${r.Filial || '—'}</td>
+        <td class="num">${fmt(r.Baseline)}</td>
+        <td class="num">${fmt(r.Qilgan)}</td>
+        <td class="num">${fmt(r.Qoldiq)}</td>
+        <td class="bar-cell"><div class="mini-bar"><div class="mini-bar-fill ${tier(r.Pct)}" style="width:${r.Pct}%"></div></div></td>
+        <td class="num"><span class="pct ${tier(r.Pct)}">${r.Pct}%</span></td>
+        <td><button class="dl-mini" title="Filial CSV" onclick="downloadShahar('${r.Viloyat.replace(/'/g, "\\'")}', '${(r.Filial||'').replace(/'/g, "\\'")}')">${dlIcon}</button></td>
+      `;
+      tbody.appendChild(tr);
+    });
+}
+document.getElementById('sht-vilfilter').addEventListener('change', renderFilial);
+document.getElementById('sht-search').addEventListener('input', renderFilial);
+renderFilial();
+
+// DOWNLOADS
+function csvEscape(v) {
+  if (v == null) return '';
+  const s = String(v);
+  return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+}
+function downloadCSV(rows, filename) {
+  const BOM = '\uFEFF';
+  const csv = BOM + rows.map(r => r.map(csvEscape).join(',')).join('\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 100);
+}
+let _pendingCache = null;
+async function getPending() {
+  if (_pendingCache) return _pendingCache;
+  const res = await fetch('data.json');
+  const j = await res.json();
+  _pendingCache = j.pending_records || [];
+  return _pendingCache;
+}
+async function downloadPending(viloyatFilter) {
+  const recs = await getPending();
+  const rows = [['CLIENT_CODE','Korxona nomi','Viloyat','Filial','Faoliyat','Segment']];
+  recs.forEach(r => {
+    if (viloyatFilter === 'ALL' || r.Viloyat === viloyatFilter) {
+      rows.push([r.CLIENT_CODE, r['Korxona nomi'], r.Viloyat, r.Filial, r.Faoliyat, r.Segment]);
+    }
+  });
+  const fn = viloyatFilter === 'ALL'
+    ? `Pending_hammasi_${DATA.meta.latest_date.replace(/\./g,'_')}.csv`
+    : `Pending_${viloyatFilter}_${DATA.meta.latest_date.replace(/\./g,'_')}.csv`;
+  downloadCSV(rows, fn);
+}
+function downloadViloyatXlsx(viloyat) {
+  const file = DATA.viloyat_files[viloyat];
+  if (file) {
+    const a = document.createElement('a');
+    a.href = 'excel_by_viloyat/' + file;
+    a.download = file;
+    document.body.appendChild(a); a.click(); a.remove();
+  } else {
+    downloadPending(viloyat);
+  }
+}
+async function downloadFilial(viloyat, filial) {
+  const recs = await getPending();
+  const rows = [['CLIENT_CODE','Korxona nomi','Viloyat','Filial','Faoliyat','Segment']];
+  recs.forEach(r => {
+    if (r.Viloyat === viloyat && r.Filial === filial) {
+      rows.push([r.CLIENT_CODE, r['Korxona nomi'], r.Viloyat, r.Filial, r.Faoliyat, r.Segment]);
+    }
+  });
+  downloadCSV(rows, `Pending_${filial}_${DATA.meta.latest_date.replace(/\./g,'_')}.csv`);
+}
+function downloadTodayReg() {
+  alert("Yangi qilganlar ro'yxati umumiy Excel ichida 'Yangi qilganlar' varaqida — НАТИЖА_kunlik faylini oching.");
+}
+</script>
+</body>
+</html>
